@@ -1,0 +1,77 @@
+<app-hamburger></app-hamburger>
+<div class="overlayz"></div>
+
+<app-back></app-back>
+
+<body>
+
+    <!-- Add Title -->
+    <h1>About <span>Me</span></h1>
+
+    <!-- Flexing picture and Biography (REMOVE SRC FROM IMAGE) -->
+    <div class="container">
+        <div class="bio">
+            <div class="bio-pic">
+                <img alt="" id="img">
+            </div>
+
+            <div class="bio-info">
+                <h2>Biography</h2>
+                <p>Over the past couple of years, I have had the opportunity of working as an I.T Assistant and a Web
+                    Developer. Both workplaces have taught me various technical skills that relate to my field of study,
+                    along with many communication and soft skills. I am currently looking for a Co op position for
+                    Winter
+                    2020, preferebly as a Full Stack Web Developer.
+                </p>
+            </div>
+        </div>
+    </div>
+
+
+    <h2 [ngClass]="{'shake-words': shakeIt}">
+        <i class="fa fa-arrow-down"></i>
+        Hover over us!
+        <i class="fa fa-arrow-down"></i>
+    </h2>
+
+
+
+</body>
+<!-- Add Jobs Worked At -->
+<!-- Cards -->
+
+<div class="grid">
+
+    <!-- card is relative -->
+    <div class="card" *ngFor="let job of allJobs">
+
+        <!-- Front of card -->
+        <!-- front is absolute -->
+        <div class="front-card">
+            <div class="img-flex">
+
+                <div class="company-name">
+                    {{job.company}}
+                </div>
+
+                <div class="company-img">
+                    <img src={{job.pic}} alt="" class="company-pic" width="200px">
+                </div>
+
+            </div>
+        </div>
+
+
+        <!-- Back of card -->
+        <!-- back is absolute -->
+        <div class="back-card">
+            <h6>{{job.position}}</h6>
+            <ul *ngFor="let resp of job.points">
+                <i class="fa fa-arrow-right"></i>
+                <li>{{resp}}</li>
+            </ul>
+        </div>
+
+    </div>
+
+</div>

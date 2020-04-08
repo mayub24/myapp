@@ -1,0 +1,60 @@
+<app-hamburger></app-hamburger>
+<!-- <div class="overlay"></div> -->
+<div class="skill-overlay"></div>
+
+<app-back></app-back>
+
+<body>
+
+
+
+    <div class="container">
+        <!-- Item #1 -->
+        <div id="grid1">
+            <h1 id="aboutHead">About</h1>
+
+            <div class="face">
+                <app-main-pic></app-main-pic>
+
+                <!-- About Box -->
+                <div class="about">
+                    <div class="text">
+
+
+                        <p>As soon as I graduated from high school, I dove right into learning different programming
+                            languages and had developed a
+                            strong passion for Software Development. Over the course of my first year at Seneca, I have
+                            gained a wide variety of
+                            skills such as JavaScript (Angular/React), HTML5, CSS3 (Bulma/Bootstrap 4), C, C++ and have
+                            attained an excitement for working
+                            with the Linux command line.</p>
+
+                        <p>I am motivated to work for any organization that challenges me to work outside my comfort
+                            zone and achieve the very best
+                            while setting high expectations.</p>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- <br><br><br><br><br> -->
+
+        <!-- <hr> -->
+
+        <!-- Item #2 -->
+
+        <div id="grid2">
+            <!-- Skills -->
+            <h1>Skills</h1>
+
+            <div class="each-skill" *ngFor="let skill of skillz">
+                <h3 class="skill-type">{{skill.type}}</h3>
+                <p class="all-skills">{{skill.languages}}</p>
+            </div>
+
+        </div>
+
+    </div>
+</body>

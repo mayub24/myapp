@@ -1,0 +1,12 @@
+img
+{
+    position: absolute;
+    width: 40px;
+    left: 2%;
+    top: 2%;
+
+    &:hover
+    {
+        cursor: pointer;
+    }
+}

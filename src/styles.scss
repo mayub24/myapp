@@ -1,0 +1,56 @@
+/* You can add global styles to this file, and also import other style files */
+// @import '../src/app/Components/hamburger/hamburger.component.scss';
+
+body
+{
+            // background-image: url('../src/assets/imgs/back.jpg');
+            // background-position: center;
+            // background-size: cover;
+            background-color: lightseagreen;
+}
+
+
+    .bar-icon
+{
+    z-index: 900;
+    position: fixed;
+    top: 3%;
+    right: 2%;
+    
+    &:hover
+    {
+        cursor: pointer;
+    }
+    
+    // We put absolute position on the bar-icon because if we put it on .btn-line, it will absolute position each single line into different place
+    .btn-line
+    {
+        width: 30px;
+        height: 5px;
+        background-color: red;
+        margin-bottom: 0.3em;
+        right: 15%;
+        top: 5%;
+        transition: all 0.5s ease-in-out;
+    }
+
+}
+
+.show
+{
+    .btn-line:nth-child(1)
+    {
+        transform: rotate(410deg);
+    }
+
+    .btn-line:nth-child(2)
+    {
+        transform: rotate(-410deg);
+        margin-top: -7px;
+    }
+
+    .btn-line:last-child
+    {
+        display: none;
+    }
+}

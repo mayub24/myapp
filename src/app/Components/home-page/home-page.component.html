@@ -1,0 +1,63 @@
+<app-hamburger (mouseover)="checkAnimation = false"></app-hamburger>
+<div class="overlay"></div>
+
+<div class="all" [ngClass]="{'animating': checkAnimation}">
+    <img src="/assets/imgs/arrowz.png" alt="" class="arw" width="300px">
+    <p class="check">Click meee!!</p>
+</div>
+
+<body id="bg-img">
+    <!-- <main></main> -->
+    <div class="main">
+        <!-- my picture -->
+        <!-- Load tag that will show my picture -->
+        <div class="pix">
+            <app-main-pic></app-main-pic>
+        </div>
+
+        <div class="container">
+            <!-- Developer -->
+            <h3 class="info" tabindex="1">
+                Student | Developer | Mentor
+            </h3>
+
+
+            <!-- Quote -->
+            <h4 class="lead" tabindex="2">
+                <hr>
+                "Destined for Greatness"
+                <hr>
+            </h4>
+
+
+            <!-- Name -->
+            <h2 class="name" tabindex="3">
+                Muhammad <span>Ayub</span>
+            </h2>
+
+
+            <!-- When hover over name, move lines under it -->
+
+            <div class="btn">
+                <button [ngClass]="{'animate': shakeAnimation}" (mouseover)="shakeAnimation = false" class="work-btn"><i
+                        class="fa fa-arrow-left" id="left"></i>View my Work!<i class="fa fa-arrow-right"
+                        id="right"></i></button>
+            </div>
+        </div>
+
+        <div class="stix-parent">
+            <div class="stix" [ngClass]="{'animation': shakeAnimation}">
+            </div>
+        </div>
+
+        <div class="iconz">
+            <!-- Geting Social media icons from font awesome -->
+            <a href="https://github.com/mayub24"><i class="fa fa-github fa-2x"></i></a>
+            <a href="https://www.linkedin.com/in/muhammad-ayub-5374b0172/"><i class="fa fa-linkedin fa-2x"></i></a>
+        </div>
+
+
+
+    </div>
+    <!-- </main> -->
+</body>

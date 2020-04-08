@@ -1,0 +1,96 @@
+@import url("https://fonts.googleapis.com/css?family=Raleway&display=swap");
+@import "../home-page/home-page.component.scss";
+
+$nav-font: 'Raleway';
+
+.pic
+{
+    // Creating a width and height
+    position: relative;
+    height: 10em;
+    width: 9em;
+    border-radius: 50%;
+    margin: 2em auto 0em auto;
+
+    // animation-name: pop;
+    // animation-duration: 1.5s;
+    // animation-delay: 3.5s;
+    // animation-fill-mode: forwards;
+    // opacity: 0;
+    
+    img
+    {
+        // Giving position relative and 100% width and height
+        // to the child element creates the same size as the parent
+        position: relative;
+        width: 100%;
+        height: 100%;
+        // filter: grayscale(150%);
+        border: 5px solid $airbnb;
+        background-repeat: no-repeat;
+        border-radius: 50%;
+        backface-visibility: hidden;
+        transition: all 0.5s ease-in-out;
+        background-image: url('../../../assets/imgs/bruh5.png');
+        background-size: cover;
+        background-position-x: 0px;
+        background-position-y: 0px;
+        // filter: blur(2px);
+
+        // We do not want to put this animation inside image because once an animation finishes, hover is not possible on that tag
+        // Since we have a hover on img, we want to put this animation on the parent of img
+
+        // animation-name: pop;
+        // animation-duration: 2s;
+        // animation-delay: 2s;
+        // animation-fill-mode: both;
+        // opacity: 0;
+    }
+    &::after
+    {
+        // So after the img were creating another item that put behind the img
+        // since its roates 180deg and backface-visibility is 0, if it hidden because it is facing back but once we hover, it turns to 0deg and it is visible
+        content: 'Full Stack Web Developer';
+        line-height: 1.8em;
+        font-weight: 800;
+        text-align: center;
+        font-size: 1.1em;
+        position: absolute;
+        top: 0;
+        border-radius: 50%;
+        width: 100%;
+        height: 100%;
+        border: 5px solid $airbnb;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transform: rotateY(180deg);
+        background-color: lightcoral;
+        transition: all 0.5s ease-in-out;
+        font-family: $nav-font;
+        backface-visibility: hidden;
+        background-size:100%;
+    }
+
+    &:hover
+    {
+        img
+        {
+            transform: rotateY(180deg);
+        }
+    }
+
+    &:hover::after
+    {
+        transform: rotateY(0deg);
+    }
+}
+
+@media(max-width: 600px)
+{
+    .pic
+    {
+        height: 8em;
+        width: 7em;
+    }
+}

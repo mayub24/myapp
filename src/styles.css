@@ -1,0 +1,42 @@
+/* You can add global styles to this file, and also import other style files */
+body {
+  background-color: lightseagreen;
+}
+
+.bar-icon {
+  z-index: 900;
+  position: fixed;
+  top: 3%;
+  right: 2%;
+}
+
+.bar-icon:hover {
+  cursor: pointer;
+}
+
+.bar-icon .btn-line {
+  width: 25px;
+  height: 4px;
+  background-color: red;
+  margin-bottom: 0.3em;
+  right: 15%;
+  top: 5%;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+.show .btn-line:nth-child(1) {
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+.show .btn-line:nth-child(2) {
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+  margin-top: -7px;
+}
+
+.show .btn-line:last-child {
+  display: none;
+}
+/*# sourceMappingURL=styles.css.map */

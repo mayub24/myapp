@@ -1,0 +1,568 @@
+@import url("https://fonts.googleapis.com/css?family=Raleway&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Lacquer&display=swap");
+
+
+$primary-color: #444;
+$second-color: #009999;
+$third-color: #EE82EE;
+$airbnb: #ff5a5f;
+$show-image: true;
+$font-large: 4em;
+
+$nav-font: 'Raleway';
+
+
+.all
+{
+    position: fixed;
+    right: 10%;
+    top: -5%;
+    transform: rotate(-10deg);
+
+
+    .check
+    {
+        position: absolute;
+        top: 60%;
+        left: 31%;
+        color: white;
+        font-size: 1.2em;
+        font-family: cursive;
+        font-weight: 100;
+
+        @media(max-width: 566px)
+        {
+            font-size: 0.8em;
+            top:35%;
+            right: 70%;
+        }
+    }
+
+
+    @media(max-width: 700px)
+    {
+        top: 0%;
+        right: 20%;
+
+        img
+        {
+            width: 150px;
+            @media(max-width: 566px)
+            {
+                width: 60px;
+            }
+        }
+        
+        
+        .check
+        {
+            left: 23%;
+            font-size: 0.8em;
+        }
+
+        @media(max-width: 566px)
+        {
+            top: 5%;
+            right: 20%;
+        }
+
+    }
+
+}
+
+
+.overlay
+{
+  height: 100vh;
+  width: 100vw;
+  display: block;
+  background: #444;
+  position: fixed;
+  top: 0;
+  left: 0;
+  clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 30%);
+}
+
+
+h3, h2
+{
+    text-align: center;
+    font-family: $nav-font;
+    font-weight: 500;
+}
+
+.main
+{
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    right: 0;
+    margin-top: 2em;
+    // overflow: hidden;
+}
+
+.lead
+{
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 200;
+    text-align: center;
+    font-size: 1.2em;
+    margin-bottom: -10px;
+}
+
+
+.nav-items
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 20;
+    font-weight: 700;
+    a {
+        text-decoration: none;
+        padding: 0.5em 1em;
+        font-family: $nav-font;
+        font-size: 1.4em;
+        user-select: none;
+        border-bottom: 3px solid #ff5a5f;
+        margin: 0em 2em;
+    &,
+    &:visited,
+    &:active,
+    &:focus{
+        color:black;
+        background-color: transparent;
+    }
+}
+
+}
+
+// Making lines move on hover
+// Try to make lines move on hover
+.name
+{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 4em;
+    font-weight: 200;
+    animation-name: fading;
+    animation-duration: 5s;
+    z-index: -20;
+    opacity: 0;
+    animation-fill-mode: forwards;
+    margin: 0.3em 0em;
+}
+
+.container
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    color: white;
+}
+
+// Fix this or try to use <hr>
+hr
+{
+    background-color: #eee;
+    border-width: 2px;
+}
+
+
+
+// Adding fading key frames to name and info
+// Quote
+.lead
+{
+    animation-name: fading;
+    animation-duration:1.5s;
+    animation-fill-mode: forwards;
+    animation-delay: 0.3s;
+    opacity: 0;
+}
+
+// Info about me
+.info
+{
+    animation-name: fading;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+    animation-delay: 0.6s;
+    opacity: 0;
+    margin-bottom: -0.2em;
+    margin-top: 2em;
+
+    // If there is a keyframes animation above a hover, the hover will not be performed after the animation finishes
+    //  Animation > Hover
+    // &:hover
+    // {
+    //     transform: rotate(200deg);
+    //     transition: 2s all ease-in-out;
+    // }
+
+}
+
+// Button
+// We add the 1st scaling animation on the .btn and the 2nd animation on the inner button
+// This is because we cannot add 2 animation on 1 tag, therefore we have to add the scaling animation on the parent and the rotating on the child
+.btn
+{
+    opacity: 0;
+    animation-name: pop;
+    animation-fill-mode: forwards;
+    animation-delay: 3s;
+    animation-duration: 1s;
+}
+
+.work-btn
+{
+    padding: 1em;
+    font-weight: 700;
+    background-color: $airbnb;
+    margin-top: 1.5em;
+    border: 2px solid black;
+    color: white;
+    
+    &:hover
+    {
+        cursor: pointer;
+        background-color: white;
+        color: black;
+        transition: 0.5s all ease-in-out;
+
+        i
+        {
+            // transform: rotate(90deg);
+            transition: 0.4s all ease-in-out;
+            color: red;
+            margin-left: 4px;
+            margin-right: 4px;
+        }
+        
+    }
+}
+
+.work-btn:hover
+{
+    i#left
+    {
+        transform: rotate(-90deg);
+    }
+    
+    i#right
+    {
+        transform: rotate(90deg);
+    }
+}
+
+.animate
+{
+    animation-name: shake;
+    animation-duration: 1s;
+    animation-fill-mode: both;
+    animation-iteration-count: 2;
+    animation-timing-function: ease-in-out;
+}
+
+.animating
+{
+    transform: rotate(-10deg);
+    animation-name: shake;
+    animation-duration: 1s;
+    animation-fill-mode: both;
+    animation-timing-function: ease-in-out;
+}
+
+.animation
+{
+    animation-name: shake2;
+    animation-duration: 1s;
+    animation-fill-mode: both;
+    animation-iteration-count: 2;
+    animation-timing-function: ease-in-out;
+}
+
+// Icons
+i#right
+{
+    margin-left: 0.5em;
+    font-size: 1.2em;
+}
+
+i#left
+{
+    margin-right: 0.5em;
+    font-size: 1.2em;
+}
+
+.iconz
+{
+    i
+    {
+        transition: all 1s ease-in-out;
+    }
+
+    opacity: 0;
+    animation-name: pop;
+    animation-delay: 2.3s;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    text-align: center;
+    padding: 0.5em;
+    margin-top: 1em;
+    font-size: 2.1em;
+
+    *
+    {
+        padding: 0em 0.2em 0em 0.2em;
+        color: white;
+
+        &:hover
+        {
+            color: yellow;
+            transition: all 0.5s ease-in-out;
+            transform: scale(2.0);
+            margin: 0em 0.5em;
+        }
+
+    }
+
+}
+
+.stix-parent
+{
+    position: relative;
+    z-index: -30;
+    top: -4%;
+    opacity: 0;
+    animation-name: pop;
+    animation-fill-mode: forwards;
+    animation-delay: 3.5s;
+    animation-duration: 1s;
+
+    @media(max-width: 600px)
+    {
+        top: -4.5%;
+    }
+
+    .stix
+    {
+        position: absolute;
+        background-color: $airbnb;
+        z-index: -10;
+        width: 2000px;
+        height: 15px;
+        box-shadow: 0px 0px 15px white;
+        border: 2px solid black;
+        top: -25.5%;
+        display: block;
+        transform: rotate(180deg);
+        // filter: blur(10px);
+    }
+
+}
+
+
+span
+{
+    color: skyblue;
+}
+
+.pix
+{
+    animation-name: pop;
+    animation-duration: 1.5s;
+    animation-delay: 3.5s;
+    animation-fill-mode: forwards;
+    opacity: 0;
+}
+
+
+// Adding key frame
+@keyframes fading
+{
+    0%
+    {
+        transform: translateY(-1000%);
+        opacity: 0;
+    }
+
+    100%
+    {
+        transform: translateY(0%);
+        opacity: 1;
+    }
+}
+
+@keyframes pop
+{
+    0%
+    {
+        transform: scale(0);
+        opacity: 0;
+    }
+
+    100%
+    {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+@keyframes slideIn
+{
+    0%
+    {
+        transform: translateX(200%);
+        opacity: 0;
+    }
+
+    100%
+    {
+        transform: translateX(0%);
+        opacity: 0.5;
+    }
+}
+
+@keyframes shake
+{
+    0%
+    {
+        transform: scale(1) rotate(0deg);
+    }
+
+    10%
+    {
+        transform: scale(1.2) rotate(4deg);
+    }
+
+     20%
+    {
+        transform: scale(1.3) rotate(-4deg);
+    }
+
+    30%
+    {
+        transform: scale(1.4) rotate(4deg);
+    }
+
+    40%
+    {
+        transform: scale(1.2) rotate(-4deg);
+    }
+
+     50%
+    {
+        transform: scale(1.4) rotate(4deg);
+    }
+
+    60%
+    {
+        transform: scale(1.21) rotate(-4deg);
+    }
+
+    70%
+    {
+        transform: scale(1.1) rotate(4deg);
+    }
+
+    80%
+    {
+        transform: scale(1.1) rotate(-4deg);
+    }
+
+    90%
+    {
+        transform: scale(1.1) rotate(4deg);
+    }
+
+    100%
+    {
+        transform: scale(1) rotate(0deg);
+    }
+}
+
+
+@keyframes shake2
+{
+    0%
+    {
+        transform: scale(1) rotate(0deg);
+    }
+
+    10%
+    {
+        transform: scale(1.1) rotate(1deg);
+    }
+
+     20%
+    {
+        transform: scale(1) rotate(-1deg);
+    }
+
+    30%
+    {
+        transform: scale(1.1) rotate(1deg);
+    }
+
+    40%
+    {
+        transform: scale(1) rotate(-1deg);
+    }
+
+     50%
+    {
+        transform: scale(1.1) rotate(1deg);
+    }
+
+    60%
+    {
+        transform: scale(1) rotate(-1deg);
+    }
+
+    70%
+    {
+        transform: scale(1.1) rotate(1deg);
+    }
+
+    80%
+    {
+        transform: scale(1) rotate(-1deg);
+    }
+
+    90%
+    {
+        transform: scale(1.1) rotate(1deg);
+    }
+
+    100%
+    {
+        transform: scale(1) rotate(0deg);
+    }
+}
+
+
+// Media query for nav
+@media(max-width: 700px)
+{
+    .main
+    {
+        margin-top: 0em;
+    }
+
+    .name
+    {
+        font-size: 2.5em;
+    }
+
+    .iconz
+    {
+        font-size: 2em;
+        margin-top: 0.5em;
+    }
+  
+}
+
+
