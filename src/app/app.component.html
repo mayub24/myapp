@@ -1,9 +1,12 @@
 <!-- Stuff below is fixed -->
-<!-- <app-hamburger></app-hamburger> -->
 
 <div class="container">
 
   <div class="main-info">
+
+    <div *ngIf="showMenu" class="backz" (click)="removeOverlay()">
+      <img src="assets/imgs/back-arrow.png" alt="" class="back">
+    </div>
 
     <div class="menu-pic">
       <img alt="" id="img">

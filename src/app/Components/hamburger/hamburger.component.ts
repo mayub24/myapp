@@ -15,7 +15,7 @@ export class HamburgerComponent implements OnInit {
   }
 
   clickBar() {
-    this.comp.showBar();
+    this.comp.showBarz();
   }
 
 }

@@ -1,14 +1,15 @@
-<app-hamburger (mouseover)="checkAnimation = false"></app-hamburger>
-<div class="overlay"></div>
+<app-hamburger style="display: none"></app-hamburger>
 
-<div class="all" [ngClass]="{'animating': checkAnimation}">
-    <img src="/assets/imgs/arrowz.png" alt="" class="arw" width="300px">
-    <p class="check">Click meee!!</p>
-</div>
+<div class="overlay"></div>
+<!-- <div class="all" [ngClass]="{'animating': checkAnimation}">
+    <img src="assets/imgs/arrowz.png" alt="" class="arw" width="300px">
+    <p class="check">Click mee!!</p>
+</div> -->
 
 <body id="bg-img">
     <!-- <main></main> -->
     <div class="main">
+
         <!-- my picture -->
         <!-- Load tag that will show my picture -->
         <div class="pix">
@@ -39,9 +40,9 @@
             <!-- When hover over name, move lines under it -->
 
             <div class="btn">
-                <button [ngClass]="{'animate': shakeAnimation}" (mouseover)="shakeAnimation = false" class="work-btn"><i
-                        class="fa fa-arrow-left" id="left"></i>View my Work!<i class="fa fa-arrow-right"
-                        id="right"></i></button>
+                <button (click)="clickButton()" [ngClass]="{'animate': shakeAnimation}"
+                    (mouseover)="shakeAnimation = false" class="work-btn"><i class="fa fa-arrow-left" id="left"></i>View
+                    my Work!<i class="fa fa-arrow-right" id="right"></i></button>
             </div>
         </div>
 

@@ -53,6 +53,30 @@
 }
 
 
+.backz
+{
+    position: relative;
+
+    img
+    {
+        position: absolute;
+        padding: 1em;
+        z-index: 100;
+        width: 40px;
+
+        @media(max-width: 768px)
+        {
+            top: 5%;
+            left: 0%;
+        }
+    }
+
+    &:hover
+    {
+        cursor: pointer;
+    }
+}
+
 .menu-pic, .menu-link
 {
     display: flex;
@@ -146,6 +170,7 @@ a
     transition: 0.5s all ease-in-out;
     font-weight: 900;
     letter-spacing: 0.1em;
+    color: rebeccapurple;
 
     &:hover
     {

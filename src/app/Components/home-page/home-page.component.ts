@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
+import { AppComponent } from '../../app.component';
+
 @Component({
   selector: 'app-home-page',
   templateUrl: './home-page.component.html',
@@ -8,22 +10,21 @@ import { Component, OnInit } from '@angular/core';
 export class HomePageComponent implements OnInit {
 
   shakeAnimation: boolean = false;
-  checkAnimation: boolean = false;
+  // checkAnimation: boolean = false;
 
-  constructor() { }
+  constructor(private appz: AppComponent) { }
 
   ngOnInit() {
 
     setInterval(() => {
       this.shakeAnimation = !this.shakeAnimation;
-    }, 8000)
+    }, 4000)
 
-    setInterval(() => {
-      setInterval(() => {
-        this.checkAnimation = !this.checkAnimation;
-      }, 100)
-    }, 3000)
+  }
 
+
+  clickButton() {
+    this.appz.showBarz();
   }
 
 }
