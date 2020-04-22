@@ -31,10 +31,10 @@ $nav-font: 'Raleway';
         border-radius: 50%;
         backface-visibility: hidden;
         transition: all 0.5s ease-in-out;
-        background-image: url('../../../assets/imgs/bruh5.png');
+        background-image: url('../../../assets/imgs/murzz.jpeg');
         background-size: cover;
         background-position-x: 0px;
-        background-position-y: 0px;
+        background-position-y: -17px;
         // filter: blur(2px);
 
         // We do not want to put this animation inside image because once an animation finishes, hover is not possible on that tag
@@ -65,11 +65,12 @@ $nav-font: 'Raleway';
         justify-content: center;
         align-items: center;
         transform: rotateY(180deg);
-        background-color: lightcoral;
+        background-color: #f08080;
         transition: all 0.5s ease-in-out;
         font-family: $nav-font;
         backface-visibility: hidden;
         background-size:100%;
+        color: white;
     }
 
     &:hover
@@ -93,4 +94,7 @@ $nav-font: 'Raleway';
         height: 8em;
         width: 7em;
     }
+
+    
+    
 }

@@ -8,6 +8,9 @@ $third-color: #EE82EE;
 $airbnb: #ff5a5f;
 $show-image: true;
 $font-large: 4em;
+$lime: limegreen;
+$light: lightgreen;
+
 
 $nav-font: 'Raleway';
 
@@ -110,7 +113,7 @@ h3, h2
     font-weight: 200;
     text-align: center;
     font-size: 1.2em;
-    margin-bottom: -10px;
+    margin-bottom: -1em;
 }
 
 
@@ -147,11 +150,7 @@ h3, h2
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 4em;
     font-weight: 200;
-    animation-name: fading;
-    animation-duration: 5s;
-    z-index: -20;
     opacity: 0;
-    animation-fill-mode: forwards;
     margin: 0.3em 0em;
 }
 
@@ -174,28 +173,18 @@ hr
 
 
 
-// Adding fading key frames to name and info
-// Quote
-.lead
-{
-    animation-name: fading;
-    animation-duration:1.5s;
-    animation-fill-mode: forwards;
-    animation-delay: 0.3s;
-    opacity: 0;
-}
 
 // Info about me
 .info
 {
-    animation-name: fading;
-    animation-duration: 0.5s;
-    animation-fill-mode: forwards;
-    animation-delay: 0.6s;
     opacity: 0;
+    animation-name: fading;
+    animation-duration: 1.5s;
+    animation-fill-mode: forwards;
+    animation-delay: 0.3s;
     margin-bottom: -0.2em;
     margin-top: 2em;
-
+    
     // If there is a keyframes animation above a hover, the hover will not be performed after the animation finishes
     //  Animation > Hover
     // &:hover
@@ -203,7 +192,26 @@ hr
     //     transform: rotate(200deg);
     //     transition: 2s all ease-in-out;
     // }
+    
+}
 
+// Adding fading key frames to name and info
+// Quote
+.lead
+{
+    animation-name: fading;
+    animation-duration: 1.5s;
+    animation-fill-mode: forwards;
+    animation-delay: 0.9s;
+    opacity: 0;
+}
+
+.name
+{
+    animation-name: fading;
+    animation-duration: 1.5s;
+    animation-delay: 1.5s;
+    animation-fill-mode: forwards;
 }
 
 // Button
@@ -354,9 +362,9 @@ i#left
         position: absolute;
         background-color: $airbnb;
         z-index: -10;
-        width: 2000px;
+        width: 3000px;
         height: 15px;
-        box-shadow: 0px 0px 15px white;
+        box-shadow: 0px 0px 15px gray;
         border: 2px solid black;
         display: block;
         transform: rotate(180deg);
@@ -386,7 +394,7 @@ span
 {
     0%
     {
-        transform: translateY(-1000%);
+        transform: translateY(-50%);
         opacity: 0;
     }
 
