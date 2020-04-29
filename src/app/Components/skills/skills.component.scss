@@ -17,12 +17,12 @@
 {
     width: 100vw;
     height: 100vh;
-    // background-color: #444;
+    background-color: #444;
     display: block;
     position: fixed;
     top: 0;
     left: 0;
-    // clip-path: polygon(0% 0%, 55% 0%, 45% 100%, 0% 100%);
+    clip-path: polygon(0% 0%, 55% 0%, 45% 100%, 0% 100%);
     transition: all 1s ease-in-out;
 
      @media(max-width: 1150px)
