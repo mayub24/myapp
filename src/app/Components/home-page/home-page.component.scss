@@ -107,14 +107,6 @@ h3, h2
     // overflow: hidden;
 }
 
-.lead
-{
-    font-family: 'Times New Roman', Times, serif;
-    font-weight: 200;
-    text-align: center;
-    font-size: 1.2em;
-    margin-bottom: -1em;
-}
 
 
 .nav-items
@@ -169,8 +161,68 @@ hr
 {
     background-color: #eee;
     border-width: 2px;
+    opacity: 0;
+    animation-name: fullWidth;
+    animation-delay: 1.5s;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    transition: all 2s ease-in-out;
 }
 
+.lead
+{
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 200;
+    text-align: center;
+    font-size: 1.2em;
+    margin: 1.5em 0em -1em 0em;
+
+    // &::before
+    // {
+    //     content: '';
+    //     position: absolute;
+    //     width: 100%;
+    //     height: 3px;
+    //     top: -45%;
+    //     opacity: 0;
+    //     background-color: white;
+    //     animation-name: fullWidth;
+    //     animation-fill-mode: forwards;
+    //     animation-delay: 2s;
+    //     animation-duration: 1s;
+    // }
+
+    // &::after
+    // {
+    //     content: '';
+    //     position: absolute;
+    //     width: 100%;
+    //     height: 3px;
+    //     top: 135%;
+    //     left: 0%;
+    //     background-color: white;
+    //     opacity: 0;
+    //     animation-name: fullWidth;
+    //     animation-fill-mode: forwards;
+    //     animation-delay: 2s;
+    //     animation-duration: 1s;
+    // }
+}
+
+@keyframes fullWidth
+{
+    0%
+    {
+        opacity: 0;
+        width: 0%;
+    }
+
+    100%
+    {
+        opacity: 1;
+        width: 100%;
+    }
+}
 
 
 
