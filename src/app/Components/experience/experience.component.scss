@@ -142,11 +142,13 @@ h1
             &:first-child
             {
                 padding: 2em 0em;
+                margin-bottom: 5em;
             }
 
             &:nth-child(2)
             {
                 margin-top: 3.5em;
+                margin-bottom: 3em;
             }
 
             .company-img
@@ -158,7 +160,7 @@ h1
         .front-card
         {
             position: absolute;
-            height: 94%;
+            height: 100%;
             width: 100%;
             background-color: white;
             color: black;
@@ -318,50 +320,25 @@ h6
 
     }
 
-    // &:hover
-    // {
-    //     .inner
-    //     {
-    //         background-color: lightgreen;
-    //         clip-path: circle(75%);
-    //         transition: all 1.5s ease-in-out;
-    //     }
-    // }
-
     .modal-main
     { 
         background-color: #eee;
         color: black;
-        position: absolute;
         max-width: 50%;
-        top: 32%;
-        left: 29%;
-        margin: 0 auto;
+        margin: 15em auto 0em auto;
         box-shadow: 1px 1px 15px 3px  gray;
         border-radius: 10px;
         border: 2px solid black;
-        display: table;
 
-        @media(max-width: 686px)
+        @media(max-width: 786px)
         {
-            top: 20%;
+            // margin: 10em auto 0em auto;
+            max-width: 75%;
         }
-
-        @media(max-width: 586px)
-        {
-            left: 20%;
-            top: 20%;
-            width: 300px;
-            margin: 0 auto;
-        }
-    
-    
 
         #cross
         {
-            position: absolute;
-            top: 1%;
-            right: 0%;
+            float: right;
             font-size: 1.5em;
             margin: 0.5em;
 
