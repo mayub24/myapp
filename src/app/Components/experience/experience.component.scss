@@ -336,6 +336,10 @@ h6
         align-items: center;
         text-align: center;
     
+        @media(max-width: 768px)
+        {
+            max-width: 85%;
+        }
 
         #cross
         {
