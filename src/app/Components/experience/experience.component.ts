@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { JobService } from '../../Services/job.service';
 import { jobs } from '../../Models/work-interface';
 import { log } from 'util';
+import { HtmlAstPath } from '@angular/compiler';
 
 
 @Component({
@@ -58,16 +59,17 @@ export class ExperienceComponent implements OnInit {
     // Get inner and add styling to inner using ts
     // Get all inner elements and style them according to the job that is clicked
     const inner = <HTMLElement>document.querySelector('.inner');
-    // inner.style.backgroundColor = 'lightgreen';
-    // inner.style.clipPath = 'circle(75%)';
-    // inner.style.transition = "all 2s";
 
+    modal.style.display = 'flex';
+    modal.style.justifyContent = 'center';
+    modal.style.alignItems = 'center';
+    modal.style.margin = '0em auto';
 
     if (ev == 'mgcs') {
 
       inner.style.backgroundColor = 'skyblue';
 
-      modal.style.display = 'block';
+
       main.innerHTML =
         `
       <h3 style="color: red; font-family: 'Raleway'; margin-top: 1em">More about MGCS</h3>
@@ -101,7 +103,6 @@ export class ExperienceComponent implements OnInit {
       `
     }
     else if (ev == 'ism') {
-      modal.style.display = 'block';
 
       inner.style.backgroundColor = 'cyan';
 

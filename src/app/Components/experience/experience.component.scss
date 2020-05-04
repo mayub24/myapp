@@ -304,6 +304,9 @@ h6
     left: 0%;
     width: 100%;
     height: 100%;
+    // display: flex;
+    // justify-content: center;
+    // align-items: center;
     
 
     .inner
@@ -317,7 +320,6 @@ h6
         animation-name: clipPathz;
         animation-fill-mode: forwards;
         animation-duration: 2s;
-
     }
 
     .modal-main
@@ -325,16 +327,15 @@ h6
         background-color: #eee;
         color: black;
         max-width: 50%;
-        margin: 15em auto 0em auto;
         box-shadow: 1px 1px 15px 3px  gray;
         border-radius: 10px;
         border: 2px solid black;
-
-        @media(max-width: 786px)
-        {
-            margin: 0em auto 0em auto;
-            max-width: 75%;
-        }
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    
 
         #cross
         {
