@@ -55,8 +55,17 @@ export class ExperienceComponent implements OnInit {
     const ev = (<HTMLInputElement>event.target).className;
     console.log(ev);
 
+    // Get inner and add styling to inner using ts
+    // Get all inner elements and style them according to the job that is clicked
+    const inner = <HTMLElement>document.querySelector('.inner');
+    // inner.style.backgroundColor = 'lightgreen';
+    // inner.style.clipPath = 'circle(75%)';
+    // inner.style.transition = "all 2s";
+
 
     if (ev == 'mgcs') {
+
+      inner.style.backgroundColor = 'skyblue';
 
       modal.style.display = 'block';
       main.innerHTML =
@@ -93,9 +102,12 @@ export class ExperienceComponent implements OnInit {
     }
     else if (ev == 'ism') {
       modal.style.display = 'block';
+
+      inner.style.backgroundColor = 'cyan';
+
       main.innerHTML =
         `
-      <h1 style="color: red; font-family: 'Raleway';">More about ISM</h1>
+      <h1 style="color: red; font-family: 'Raleway';margin-top: 1em; padding: 0.5em">More about ISM</h1>
       
 
       <div style="width: 85%; margin: 0 auto">
