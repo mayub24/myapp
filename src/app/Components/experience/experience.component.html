@@ -36,42 +36,73 @@
 
 
 
-</body>
-<!-- Add Jobs Worked At -->
-<!-- Cards -->
 
-<div class="grid">
+    <!-- Add Jobs Worked At -->
+    <!-- Cards -->
 
-    <!-- card is relative -->
-    <div class="card" *ngFor="let job of allJobs">
+    <div class="grid">
 
-        <!-- Front of card -->
-        <!-- front is absolute -->
-        <div class="front-card">
-            <div class="img-flex">
+        <!-- card is relative -->
+        <div class="card" *ngFor="let job of allJobs">
 
-                <div class="company-name">
-                    {{job.company}}
+            <!-- Front of card -->
+            <!-- front is absolute -->
+            <div class="front-card">
+                <div class="img-flex">
+
+                    <div class="company-name">
+                        {{job.company}}
+                    </div>
+
+                    <div class="company-img">
+                        <img src={{job.pic}} alt="" class="company-pic" width="200px">
+                    </div>
+
                 </div>
+            </div>
 
-                <div class="company-img">
-                    <img src={{job.pic}} alt="" class="company-pic" width="200px">
-                </div>
+
+            <!-- Back of card -->
+            <!-- back is absolute -->
+            <div class="back-card">
+                <h6>{{job.position}}</h6>
+                <ul *ngFor="let resp of job.points">
+                    <i class="fa fa-arrow-right"></i>
+                    <li>{{resp}}</li>
+                </ul>
+
+
+                <button class="{{job.class}}" (click)="showModal(e)">
+                    Show More
+                </button>
+
 
             </div>
-        </div>
 
-
-        <!-- Back of card -->
-        <!-- back is absolute -->
-        <div class="back-card">
-            <h6>{{job.position}}</h6>
-            <ul *ngFor="let resp of job.points">
-                <i class="fa fa-arrow-right"></i>
-                <li>{{resp}}</li>
-            </ul>
         </div>
 
     </div>
 
-</div>
+    <div class="modal-back">
+
+
+        <div class="modal-main">
+            <div class="inner">
+
+                <i class="fa fa-times" id="cross" (click)="removeModal()"></i>
+
+                <div class="modal-info">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem necessitatibus magnam, ipsa
+                        consectetur
+                        distinctio illo voluptate architecto cupiditate. Dolor aliquid odit molestiae fugit impedit
+                        facilis
+                        quis numquam. Iste, itaque corrupti!</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+</body>

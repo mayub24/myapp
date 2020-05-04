@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { JobService } from '../../Services/job.service';
 import { jobs } from '../../Models/work-interface';
+import { log } from 'util';
 
 
 @Component({
@@ -39,15 +40,94 @@ export class ExperienceComponent implements OnInit {
     setInterval(() => {
       if (this.i < this.txt.length && this.add) {
 
-        console.log(this.txt.length);
-        console.log(this.i);
-
         this.allText += this.txt.charAt(this.i);
 
         this.i++;
       }
     }, 40);
 
+  }
+
+  showModal() {
+    const modal = <HTMLElement>document.querySelector('.modal-back');
+    const main = <HTMLElement>document.querySelector('.modal-info');
+
+    const ev = (<HTMLInputElement>event.target).className;
+    console.log(ev);
+
+
+    if (ev == 'mgcs') {
+
+      modal.style.display = 'block';
+      main.innerHTML =
+        `
+      <h1 style="color: red; font-family: 'Raleway'; margin-top: 1em">More about MGCS</h1>
+      
+    <div style="width: 85%; margin: 0 auto">
+     <li>
+        Performed daily scrums and weekly sprints while working in an Agile environment
+     </li>
+
+      <br>
+
+     <li>
+        Worked with the Git VCS to commit and push changes made to a deployed project
+     </li>
+
+     <br>
+
+     <li>
+      Implemented Angular Unit Testing for HTTP Requests performed and verified the data that was received through the API
+     </li>
+
+      <br>
+
+     <li>
+      Improved the content management of the organization's website by integrating a headless CMS called "Strapi" allowing users to view the latest and most popular blog
+     </li>
+
+     <br>
+
+     </div>
+      `
+    }
+    else if (ev == 'ism') {
+      modal.style.display = 'block';
+      main.innerHTML =
+        `
+      <h1 style="color: red; font-family: 'Raleway';">More about ISM</h1>
+      
+
+      <div style="width: 85%; margin: 0 auto">
+     <li>
+        Managed all mail and posting duties to make sure all email was delivered and received on time
+     </li>
+
+      <br>
+
+     <li>
+        Communicated with buyers to order products for the organization
+     </li>
+
+     <br>
+
+     <li>
+      Operated scanners, photocopiers and fax machines
+     </li>
+
+     <br>
+     </div>
+
+      `
+    }
+
+
+  }
+
+  removeModal() {
+    const modal = <HTMLElement>document.querySelector('.modal-back');
+
+    modal.style.display = 'none';
   }
 
 

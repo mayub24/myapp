@@ -285,13 +285,14 @@ hr
     background-color: $airbnb;
     border: 2px solid black;
     color: white;
-    
+
+
     &:hover
     {
         cursor: pointer;
         background-color: white;
         color: black;
-        transition: 0.5s all ease-in-out;
+        transition: 0.4s all ease-in-out;
 
         i
         {

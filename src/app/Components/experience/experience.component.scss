@@ -13,7 +13,7 @@ html, .container
      background-color: transparent;
      line-height: 1.5;   
      overflow: hidden;
-    }
+}
     
     .overlayz
 {
@@ -267,7 +267,7 @@ h1
             transition: $trans;
             cursor: pointer;
             
-            @media(max-width: 786px)
+            @media(max-width: 996px)
             {
                padding-bottom: 6em;        
             }
@@ -292,6 +292,84 @@ h6
 }
 
 
+// Modal
+.modal-back
+{
+    display: none;
+    background-color: rgba(0,0,0,0.5);
+    position: fixed; // fixed allows the height to expand throughout whole page no matter how long the page
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+    
+
+    .inner
+    {
+        background: skyblue;
+        border-radius: 10px;
+        width: 100%;
+        clip-path: circle(10% at 0% 0%);
+        transition: all 1.5s ease-in-out;
+        display: table;
+
+    }
+
+    &:hover
+    {
+        .inner
+        {
+            background-color: lightgreen;
+            clip-path: circle(75%);
+            transition: all 1.5s ease-in-out;
+        }
+    }
+
+    .modal-main
+    { 
+        background-color: #eee;
+        color: black;
+        position: absolute;
+        max-width: 50%;
+        top: 40%;
+        left: 28%;
+        margin: 0 auto;
+        box-shadow: 1px 1px 15px 3px  gray;
+        border-radius: 10px;
+        border: 2px solid black;
+        display: table;
+
+        @media(max-width: 786px)
+        {
+            right: 25%;
+            top: 10%;
+            width: 60%;
+            // margin: 0 auto;
+        }
+    
+
+        #cross
+        {
+            position: absolute;
+            top: 1%;
+            right: 0%;
+            font-size: 1.5em;
+            margin: 0.5em;
+
+            &:hover
+            {
+                cursor: pointer;
+            }
+        }
+
+        p
+        {
+            padding: 2em;
+        }
+
+    }
+    
+}
 
 @media(max-width: 1468px)
 {
@@ -301,20 +379,8 @@ h6
         display: grid;
         grid-template-columns: repeat(2, 1fr);
     }
-
     
-     body
-    {
-        
-        &::after
-        {
-            height: 140vh;
-            background-color: rgba(#444, 1);
-        }
-            
-    }
-    
-    }
+}
 
 @media(max-width: 968px)
     {
@@ -681,3 +747,48 @@ img
 //         transition: 4s all ease-in-out;
 //     }
 // }
+
+
+// Styled buttons
+.sdm
+{
+    display: none;
+}
+
+
+.mgcs, .ism
+{
+    width: 35%;
+    margin: 0 auto;
+    padding: 0.5em;
+    background-color: transparent;
+    border: 1px solid black;
+    position: relative;
+
+    &::before
+    {
+        content: "";
+        background-color: black;
+        color: white;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 0;
+        transition: 0.5s;
+        z-index: -5;
+        transition: all 0.3s ease-in-out;
+    }
+
+    &:hover
+    {
+        cursor: pointer;
+        color: white;
+
+        &::before
+        {
+            height: 102%;
+            color: white;
+        }
+    }
+}
