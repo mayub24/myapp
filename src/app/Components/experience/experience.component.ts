@@ -70,7 +70,7 @@ export class ExperienceComponent implements OnInit {
       modal.style.display = 'block';
       main.innerHTML =
         `
-      <h1 style="color: red; font-family: 'Raleway'; margin-top: 1em">More about MGCS</h1>
+      <h3 style="color: red; font-family: 'Raleway'; margin-top: 1em">More about MGCS</h3>
       
     <div style="width: 85%; margin: 0 auto">
      <li>
@@ -107,7 +107,7 @@ export class ExperienceComponent implements OnInit {
 
       main.innerHTML =
         `
-      <h1 style="color: red; font-family: 'Raleway';margin-top: 1em; padding: 0.5em">More about ISM</h1>
+      <h3 style="color: red; font-family: 'Raleway';margin-top: 1em; padding: 0.5em">More about ISM</h3>
       
 
       <div style="width: 85%; margin: 0 auto">
