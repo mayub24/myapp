@@ -79,12 +79,6 @@ export class ExperienceComponent implements OnInit {
         Performed daily scrums and weekly sprints while working in an Agile environment
      </li>
 
-      <br>
-
-     <li>
-        Worked with the Git VCS to commit and push changes made to a deployed project
-     </li>
-
      <br>
 
      <li>
