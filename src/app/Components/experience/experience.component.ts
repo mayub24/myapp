@@ -37,7 +37,7 @@ export class ExperienceComponent implements OnInit {
 
   show() {
 
-
+    // setTimeout(() => {
     setInterval(() => {
       if (this.i < this.txt.length && this.add) {
 
@@ -46,7 +46,7 @@ export class ExperienceComponent implements OnInit {
         this.i++;
       }
     }, 40);
-
+    // }, 3000)
   }
 
   showModal() {
@@ -72,7 +72,7 @@ export class ExperienceComponent implements OnInit {
 
       main.innerHTML =
         `
-      <h3 style="color: red; font-family: 'Raleway'; margin-top: 1em">More about MGCS</h3>
+      <h2 style="color: red; font-family: 'Raleway'; margin-top: 1em; text-align: center; margin-left: 2em;">More Responsibilities</h2>
       
     <div style="width: 85%; margin: 0 auto">
      <li>
@@ -102,7 +102,7 @@ export class ExperienceComponent implements OnInit {
 
       main.innerHTML =
         `
-      <h3 style="color: red; font-family: 'Raleway';margin-top: 1em; padding: 0.5em">More about ISM</h3>
+      <h2 style="color: red; font-family: 'Raleway';margin-top: 1em; padding: 0.5em; margin-left: 1em;">More about ISM</h2>
       
 
       <div style="width: 85%; margin: 0 auto">

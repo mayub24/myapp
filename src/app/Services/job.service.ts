@@ -21,7 +21,7 @@ export class JobService {
       },
       {
         company: 'Islamic Society of Markham',
-        position: 'I.T Assisstant',
+        position: 'I.T Assistant',
         points: ['Worked with Microsoft Office 365 products such as Word, Excel and PowerPoint', 'Used Adobe products (Adobe XD/Photoshop) to create designs for events and programs that took place at ISM', 'Worked with QuickBooks to manage sales, expenses and kept track of transactions on a regular basis'],
         pic: 'assets/imgs/ismFinal.jpg',
         class: 'ism'
