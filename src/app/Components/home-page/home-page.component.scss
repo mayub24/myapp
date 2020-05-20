@@ -298,7 +298,7 @@ hr
         {
             // transform: rotate(90deg);
             transition: 0.4s all ease-in-out;
-            color: red;
+            color: $airbnb;
             margin-left: 4px;
             margin-right: 4px;
         }
@@ -383,12 +383,17 @@ i#left
 
         &:hover
         {
-            color: yellow;
-            transition: all 0.5s ease-in-out;
-            transform: scale(2.0);
-            margin: 0em 0.5em;
+                color: yellow;
+                transition: all 0.5s ease-in-out;
+                transform: scale(2.0);
+                margin: 0em 0.5em;
         }
 
+    }
+
+    &:nth-child(3)
+    {
+        font-size: 5em;
     }
 
 }

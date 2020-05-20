@@ -37,16 +37,16 @@ export class ExperienceComponent implements OnInit {
 
   show() {
 
-    // setTimeout(() => {
-    setInterval(() => {
-      if (this.i < this.txt.length && this.add) {
+    setTimeout(() => {
+      setInterval(() => {
+        if (this.i < this.txt.length && this.add) {
 
-        this.allText += this.txt.charAt(this.i);
+          this.allText += this.txt.charAt(this.i);
 
-        this.i++;
-      }
-    }, 40);
-    // }, 3000)
+          this.i++;
+        }
+      }, 40);
+    }, 2000)
   }
 
   showModal() {
@@ -67,7 +67,7 @@ export class ExperienceComponent implements OnInit {
 
     if (ev == 'mgcs') {
 
-      inner.style.backgroundColor = 'skyblue';
+      inner.style.backgroundColor = '#03d3fc';
 
 
       main.innerHTML =
@@ -75,19 +75,19 @@ export class ExperienceComponent implements OnInit {
       <h2 style="color: red; font-family: 'Raleway'; margin-top: 1em; text-align: center; margin-left: 2em;">More Responsibilities</h2>
       
     <div style="width: 85%; margin: 0 auto">
-     <li>
+     <li style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">
         Performed daily scrums and weekly sprints while working in an Agile environment
      </li>
 
      <br>
 
-     <li>
+     <li style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">
       Implemented Angular Unit Testing for HTTP Requests performed and verified the data that was received through the API
      </li>
 
       <br>
 
-     <li>
+     <li style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">
       Improved the content management of the organization's website by integrating a headless CMS called "Strapi" allowing users to view the latest and most popular blog
      </li>
 
@@ -98,7 +98,7 @@ export class ExperienceComponent implements OnInit {
     }
     else if (ev == 'ism') {
 
-      inner.style.backgroundColor = 'cyan';
+      inner.style.backgroundColor = 'skyblue';
 
       main.innerHTML =
         `
@@ -106,19 +106,19 @@ export class ExperienceComponent implements OnInit {
       
 
       <div style="width: 85%; margin: 0 auto">
-     <li>
+     <li style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">
         Managed all mail and posting duties to make sure all email was delivered and received on time
      </li>
 
       <br>
 
-     <li>
+     <li style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">
         Communicated with buyers to order products for the organization
      </li>
 
      <br>
 
-     <li>
+     <li style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">
       Operated scanners, photocopiers and fax machines
      </li>
 

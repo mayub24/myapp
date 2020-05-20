@@ -1,4 +1,5 @@
 @import '../../Components/home-page/home-page.component.scss';
+@import '../../Components/experience/experience.component.scss';
 // @import '../../../styles.scss';
 
 
@@ -53,6 +54,11 @@
         text-align: center;
         flex: 1;
         flex-direction: column;
+        opacity: 0;
+        animation-name: leftToRight;
+        animation-delay: 0.20s;
+        animation-duration: 1s;
+        animation-fill-mode: forwards;
 
         h1
         {
@@ -90,6 +96,7 @@
             padding: 1em;
             border-radius: 1em;
             color: white;
+        
             
             @media(max-width: 566px)
             {
@@ -132,6 +139,7 @@
 
     #grid2
     {
+        opacity: 0;
         position: relative;
         // height: 100vh;
         display: flex;
@@ -140,6 +148,10 @@
         text-align: center;
         flex: 1;
         flex-direction: column;
+        animation-name: rightToLeft;
+        animation-delay: 0.20s;
+        animation-duration: 1s;
+        animation-fill-mode: forwards;
 
         @media(max-width: 600px)
         {
