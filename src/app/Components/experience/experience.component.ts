@@ -17,7 +17,6 @@ export class ExperienceComponent implements OnInit {
   i: number = 0;
   txt: string = "Over the past couple of years, I have had the opportunity of working as an I.T Assistant and as a Web Developer. Both workplaces have taught me various technical skills that relate to my field of study, along with many communication and soft skills. I am currently looking for a Co op position for Winter 2021, preferably as a Full Stack Web Developer."
   allText: string = '';
-  add: boolean = true;
 
 
   constructor(private jobService: JobService) {
@@ -39,7 +38,7 @@ export class ExperienceComponent implements OnInit {
 
     setTimeout(() => {
       setInterval(() => {
-        if (this.i < this.txt.length && this.add) {
+        if (this.i < this.txt.length) {
 
           this.allText += this.txt.charAt(this.i);
 
