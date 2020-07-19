@@ -665,7 +665,7 @@ img
     border: 1px solid black;
     position: relative;
 
-    &::before
+    &::after
     {
         content: "";
         background-color: black;
@@ -673,9 +673,9 @@ img
         position: absolute;
         bottom: 0;
         left: 0;
-        width: 100%;
-        height: 0;
-        transition: 0.5s;
+        width: 0%;
+        height: 100%;
+        transition: 0.75s;
         z-index: -5;
         transition: all 0.3s ease-in-out;
     }
@@ -685,9 +685,9 @@ img
         cursor: pointer;
         color: white;
 
-        &::before
+        &::after
         {
-            height: 102%;
+            width: 100%;
             color: white;
         }
     }

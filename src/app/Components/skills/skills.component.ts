@@ -21,19 +21,19 @@ export class SkillsComponent implements OnInit {
       [
         {
           type: 'Programming Languages',
-          languages: 'JavaScript,TypeScript, C, C++'
-        },
-        {
-          type: 'Backend Development',
-          languages: 'Node.js, Express.js, MongoDB, Mongoose'
+          languages: 'JavaScript,TypeScript, C, C++, Shell Scripting (Linux/Unix/BASH), MySQL'
         },
         {
           type: 'Front-end Development',
           languages: 'Angular, React, jQuery, HTML5, CSS3, Sass, Bootstrap 4, Bulma'
         },
         {
+          type: 'Backend Development',
+          languages: 'Node.js, Express.js, MongoDB, Mongoose'
+        },
+        {
           type: 'Other',
-          languages: 'OOP Concepts, JSON, AJAX, REST API\'s, ES6, Emmet, Git/Github, Photoshop, Illustrator'
+          languages: 'OOP Concepts, JSON, AJAX, REST API\'s, ES6, Emmet, Git/Github, Adobe Photoshop/Illustrator/XD, Flexbox, CSS Grid, NoSQL, GreenSock, SwiperJS, ChartJS'
         }
       ]
 
