@@ -81,7 +81,7 @@ $nav-font: 'Raleway';
   height: 100vh;
   width: 100vw;
   display: block;
-  background: #444;
+  background: #121212;
   position: fixed;
   top: 0;
   left: 0;
@@ -282,7 +282,7 @@ hr
 {
     padding: 1em;
     font-weight: 700;
-    background-color: $airbnb;
+    background-color: #9f29ff;
     border: 2px solid black;
     color: white;
 
@@ -298,7 +298,7 @@ hr
         {
             // transform: rotate(90deg);
             transition: 0.4s all ease-in-out;
-            color: $airbnb;
+            color: #030056;
             margin-left: 4px;
             margin-right: 4px;
         }
@@ -384,7 +384,7 @@ i#left
         &:hover
         {
                 cursor: pointer;
-                color: yellow;
+                color: #9f29ff;
                 transition: all 0.5s ease-in-out;
                 transform: scale(2.0);
                 margin: 0em 0.5em;
@@ -418,7 +418,7 @@ i#left
     .stix
     {
         position: absolute;
-        background-color: $airbnb;
+        background-color: #9f29ff;
         z-index: -10;
         width: 3000px;
         height: 15px;
@@ -434,7 +434,7 @@ i#left
 
 span.blue
 {
-    color: skyblue;
+    color: #9f29ff;
 }
 
 .pix

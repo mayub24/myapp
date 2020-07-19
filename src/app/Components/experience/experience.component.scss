@@ -40,7 +40,7 @@ html, .container
         width: 200px;
         height: 200px;
         border-radius: 50%;
-        border: 5px solid #009999;
+        border: 5px solid black;
         background-image: url('../../../assets/imgs/final.png');
         background-size: cover;
         background-position-y: -30px;
@@ -181,7 +181,7 @@ h1.exp
             background-color: white;
             color: black;
             padding: 0.5em;
-            border-bottom: 5px solid skyblue;
+            border-bottom: 5px solid #9f29ff;
             backface-visibility: hidden;
             transition: $trans;
             border-radius: 8px;
@@ -298,7 +298,7 @@ h6
 {
     margin: 0em 0em 1em 0em;
     font-size: 1.4em;
-    color: #ff5a5f;
+    color: #9f29ff;
     // font-family: $nav-font;
     // font-weight: 900;
 }
