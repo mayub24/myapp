@@ -327,7 +327,7 @@ h6
 
     .inner
     {
-        background: skyblue;
+        background-color: white;
         border-radius: 10px;
         width: 100%;
         clip-path: circle(10% at 0% 0%);
@@ -341,8 +341,7 @@ h6
 
     .modal-main
     { 
-        background-color: #eee;
-        color: black;
+        color: white;
         max-width: 50%;
         box-shadow: 1px 1px 15px 3px  gray;
         border-radius: 10px;

@@ -26,10 +26,11 @@ $nav-font: 'Raleway';
         border-radius: 50%;
         backface-visibility: hidden;
         transition: all 0.5s ease-in-out;
-        background-image: url('../../../assets/imgs/murzz.jpeg');
+        background-image: url('../../../assets/imgs/boyz-murre.jpg');
         background-size: cover;
         background-position-x: 0px;
-        background-position-y: -17px;
+        background-position-y: 0px;
+        // filter: brightness(120%);
         // filter: blur(2px);
 
         // We do not want to put this animation inside image because once an animation finishes, hover is not possible on that tag

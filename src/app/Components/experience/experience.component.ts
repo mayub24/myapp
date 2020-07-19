@@ -66,12 +66,12 @@ export class ExperienceComponent implements OnInit {
 
     if (ev == 'mgcs') {
 
-      inner.style.backgroundColor = '#03d3fc';
+      inner.style.backgroundColor = '#272727';
 
 
       main.innerHTML =
         `
-      <h2 style="color: red; font-family: 'Raleway'; margin-top: 1em; text-align: center; margin-left: 2em;">More Responsibilities</h2>
+      <h2 style="color: #9744be; font-family: 'Raleway'; margin-top: 1em; text-align: center; margin-left: 2em;">More Responsibilities</h2>
       
     <div style="width: 85%; margin: 0 auto">
      <li style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">
@@ -97,11 +97,11 @@ export class ExperienceComponent implements OnInit {
     }
     else if (ev == 'ism') {
 
-      inner.style.backgroundColor = 'skyblue';
+      inner.style.backgroundColor = '#272727';
 
       main.innerHTML =
         `
-      <h2 style="color: red; font-family: 'Raleway';margin-top: 1em; padding: 0.5em; margin-left: 1em;">More about ISM</h2>
+      <h2 style="color: #9744be; font-family: 'Raleway';margin-top: 1em; padding: 0.5em; margin-left: 1em;">More about ISM</h2>
       
 
       <div style="width: 85%; margin: 0 auto">
