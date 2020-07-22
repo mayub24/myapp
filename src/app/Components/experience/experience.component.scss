@@ -40,7 +40,7 @@ html, .container
         width: 200px;
         height: 200px;
         border-radius: 50%;
-        border: 5px solid black;
+        border: 3px solid black;
         background-image: url('../../../assets/imgs/final.png');
         background-size: cover;
         background-position-y: -30px;
@@ -49,6 +49,14 @@ html, .container
         animation-duration: 1s;
         animation-fill-mode: forwards;
         animation-delay: 0.75s;
+
+        @media(max-width: 700px)
+        {
+            margin-top: 1.3em;
+            width: 130px;
+            height: 130px;
+            background-position-y: -20px;
+        }
     }
 
 
@@ -63,6 +71,11 @@ h1.exp
     animation-name: upDown;
     animation-duration: 1s;
     animation-fill-mode: forwards;
+
+    @media(max-width: 700px)
+    {
+        font-size: 1.8em;
+    }
 }
 
 
@@ -104,6 +117,15 @@ h1.exp
         animation-delay: 0.75s;
         animation-duration: 1s;
         animation-fill-mode: forwards;
+
+
+        .infoz
+        {
+            @media(max-width: 700px)
+            {
+                font-size: 0.8em;
+            }
+        }
     }
 }
 
@@ -114,7 +136,7 @@ h1.exp
     {
         position: relative;
         width: 25em;
-        height: 14em;
+        height: 13em;
         font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         margin: 0em 2em;
         margin-top: 2em;
@@ -186,6 +208,11 @@ h1.exp
             transition: $trans;
             border-radius: 8px;
 
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            text-align: center;
+
 
             
             // Div
@@ -205,10 +232,13 @@ h1.exp
             {
                 font-size: 1.5em;
                 font-weight: 100;
+                margin-right: 2em;
+
 
                 @media(max-width: 556px)
                 {
                     text-align: center;
+                    margin-right: 0em;
                 }
             }
 
@@ -424,6 +454,11 @@ h2
     margin-top: 1em;
     font-weight: 900;
     overflow: hidden;
+
+    @media(max-width: 700px)
+    {
+        font-size: 1.2em;
+    }
 }
 
 .shake-words

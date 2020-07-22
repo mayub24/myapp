@@ -1,69 +1,81 @@
 <app-hamburger style="display: none"></app-hamburger>
 
-<div class="overlay"></div>
-<!-- <div class="all" [ngClass]="{'animating': checkAnimation}">
+<div class="bruh">
+
+    <div class="overlay"></div>
+    <!-- <div class="all" [ngClass]="{'animating': checkAnimation}">
     <img src="assets/imgs/arrowz.png" alt="" class="arw" width="300px">
     <p class="check">Click mee!!</p>
 </div> -->
 
-<body id="bg-img">
-    <!-- <main></main> -->
-    <div class="main">
+    <body id="bg-img">
+        <!-- <main></main> -->
+        <div class="main">
 
-        <!-- my picture -->
-        <!-- Load tag that will show my picture -->
-        <div class="pix">
-            <app-main-pic></app-main-pic>
-        </div>
-
-        <div class="container">
-            <!-- Developer -->
-            <h3 class="info" tabindex="1">
-                Student | Developer | Mentor
-            </h3>
-
-
-            <!-- Quote -->
-            <h4 class="lead" tabindex="2">
-                <hr>
-                "Destined for Greatness"
-                <hr>
-            </h4>
-
-
-            <!-- Name -->
-            <h2 class="name" tabindex="3">
-                Muhammad <span class="blue">Ayub</span>
-            </h2>
-
-
-            <!-- When hover over name, move lines under it -->
-
-            <div class="btn">
-                <button (click)="clickButton()" [ngClass]="{'animate': shakeAnimation}"
-                    (mouseover)="shakeAnimation = false" class="work-btn"><i class="fa fa-arrow-left" id="left"></i>
-                    <span>Check me out!</span><i class="fa fa-arrow-right" id="right"></i>
-                </button>
+            <!-- my picture -->
+            <!-- Load tag that will show my picture -->
+            <div class="pix">
+                <app-main-pic></app-main-pic>
             </div>
-        </div>
 
-        <div class="stix-parent">
-            <div class="stix" [ngClass]="{'animation': shakeAnimation}">
+            <div class="container">
+                <!-- Developer -->
+                <h3 class="info" tabindex="1">
+                    Student | Developer | Mentor
+                </h3>
+
+
+                <!-- Quote -->
+                <!-- <h4 tabindex="2" class="lead"> -->
+                <div class="lead">
+                    <hr>
+                    <div class="quote">
+                        {{allText}}
+                        <span class="cursor">
+                            |
+                        </span>
+                    </div>
+                    <hr>
+                </div>
+                <!-- </h4> -->
+
+
+                <!-- Name -->
+                <h2 class="name" tabindex="3">
+                    Muhammad <span class="blue">Ayub</span>
+                </h2>
+
+
+                <!-- When hover over name, move lines under it -->
+
+                <div class="btn">
+                    <button (click)="clickButton()" [ngClass]="{'animate': shakeAnimation}"
+                        (mouseover)="shakeAnimation = false" class="work-btn"><i class="fa fa-arrow-left" id="left"></i>
+                        <span>Check me out!</span><i class="fa fa-arrow-right" id="right"></i>
+                    </button>
+                </div>
+
             </div>
+
+            <div class="stix-parent">
+                <div class="stix" [ngClass]="{'animation': shakeAnimation}">
+                </div>
+            </div>
+
+            <div class="iconz">
+                <!-- Geting Social media icons from font awesome -->
+                <a target="_blank" href="https://github.com/mayub24"><i class="fa fa-github fa-2x"></i></a>
+
+                <a target="_blank" href="https://www.linkedin.com/in/muhammad-ayub-5374b0172/"><i
+                        class="fa fa-linkedin fa-2x"></i></a>
+
+                <a href="mailto:mayub7@myseneca.ca"><i class="fa fa-envelope"></i></a>
+            </div>
+
+
+
         </div>
+        <!-- </main> -->
+    </body>
 
-        <div class="iconz">
-            <!-- Geting Social media icons from font awesome -->
-            <a target="_blank" href="https://github.com/mayub24"><i class="fa fa-github fa-2x"></i></a>
-
-            <a target="_blank" href="https://www.linkedin.com/in/muhammad-ayub-5374b0172/"><i
-                    class="fa fa-linkedin fa-2x"></i></a>
-
-            <a href="mailto:mayub7@myseneca.ca"><i class="fa fa-envelope"></i></a>
-        </div>
-
-
-
-    </div>
-    <!-- </main> -->
-</body>
+</div>
