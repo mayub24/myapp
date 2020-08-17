@@ -137,7 +137,37 @@
 
         <div class="swiperz">
 
-            <h1>Design Work</h1>
+            <swiper [config]="config">
+
+                <div class="swiper-wrapper">
+
+                    <!-- #1 -->
+                    <div class="swiper-slide">
+                        <img src="assets/imgs/airbnb-logo.jpg" alt="" id="bnb">
+                    </div>
+
+
+                    <!-- #2 -->
+                    <div class="swiper-slide">
+                        <img src="assets/imgs/airbnb-logo.jpg" alt="" id="bnb">
+                    </div>
+
+
+                    <!-- #3 -->
+                    <div class="swiper-slide">
+                        <img src="assets/imgs/airbnb-logo.jpg" alt="" id="bnb">
+                    </div>
+
+                </div>
+
+                <!-- Add Pagination -->
+                <div class="swiper-pagination"></div>
+
+                <!-- Add Arrows -->
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+
+            </swiper>
 
         </div>
 
