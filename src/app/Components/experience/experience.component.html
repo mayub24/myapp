@@ -1,34 +1,35 @@
 <app-hamburger></app-hamburger>
 <div class="overlayz"></div>
+<div class="container">
 
-<app-back></app-back>
+    <app-back></app-back>
 
-<body>
+    <body>
 
-    <!-- Add Title -->
-    <h1 class="exp">My <span class="blue">Experience</span></h1>
+        <!-- Add Title -->
+        <h1 class="exp">My <span class="blue">Experience</span></h1>
 
-    <!-- Flexing picture and Biography (REMOVE SRC FROM IMAGE) -->
-    <div class="container">
-        <div class="bio">
-            <div class="bio-pic">
-                <img alt="" id="img">
-            </div>
+        <!-- Flexing picture and Biography (REMOVE SRC FROM IMAGE) -->
+        <div class="container">
+            <div class="bio">
+                <div class="bio-pic">
+                    <img alt="" id="img">
+                </div>
 
-            <div class="bio-info">
-                <h2>Biography</h2>
-                <span class="infoz">
-                    {{allText}}
-                    <span class="cursor">
-                        |
+                <div class="bio-info">
+                    <h2>Biography</h2>
+                    <span class="infoz">
+                        {{allText}}
+                        <span class="cursor">
+                            |
+                        </span>
                     </span>
-                </span>
+                </div>
             </div>
         </div>
-    </div>
 
 
-    <!-- <h2>
+        <!-- <h2>
         <i class="fa fa-arrow-down"></i>
         Check Me Out!
         <i class="fa fa-arrow-down"></i>
@@ -37,75 +38,77 @@
 
 
 
-    <!-- Add Jobs Worked At -->
-    <!-- Cards -->
+        <!-- Add Jobs Worked At -->
+        <!-- Cards -->
 
-    <div class="grid">
+        <div class="grid">
 
-        <!-- card is relative -->
-        <div class="card" *ngFor="let job of allJobs">
+            <!-- card is relative -->
+            <div class="card" *ngFor="let job of allJobs">
 
-            <!-- Front of card -->
-            <!-- front is absolute -->
-            <div class="front-card">
-                <div class="img-flex">
+                <!-- Front of card -->
+                <!-- front is absolute -->
+                <div class="front-card">
+                    <div class="img-flex">
 
-                    <div class="company-name">
-                        {{job.company}}
+                        <div class="company-name">
+                            {{job.company}}
+                        </div>
+
+                        <div class="company-img">
+                            <img src={{job.pic}} alt="" class="company-pic" width="150px">
+                        </div>
+
                     </div>
+                </div>
 
-                    <div class="company-img">
-                        <img src={{job.pic}} alt="" class="company-pic" width="150px">
-                    </div>
+
+                <!-- Back of card -->
+                <!-- back is absolute -->
+                <div class="back-card">
+                    <h6>{{job.position}}</h6>
+                    <ul *ngFor="let resp of job.points">
+                        <i class="fa fa-arrow-right"></i>
+                        <li>{{resp}}</li>
+                    </ul>
+
+
+                    <button class="{{job.class}}" (click)="showModal()">
+                        Show More
+                    </button>
+
 
                 </div>
-            </div>
-
-
-            <!-- Back of card -->
-            <!-- back is absolute -->
-            <div class="back-card">
-                <h6>{{job.position}}</h6>
-                <ul *ngFor="let resp of job.points">
-                    <i class="fa fa-arrow-right"></i>
-                    <li>{{resp}}</li>
-                </ul>
-
-
-                <button class="{{job.class}}" (click)="showModal()">
-                    Show More
-                </button>
-
 
             </div>
 
         </div>
 
-    </div>
-
-    <div class="modal-back">
+        <div class="modal-back">
 
 
-        <div class="modal-main">
+            <div class="modal-main">
 
-            <div class="inner">
+                <div class="inner">
 
-                <i class="fa fa-times" id="cross" (click)="removeModal()"></i>
+                    <i class="fa fa-times" id="cross" (click)="removeModal()"></i>
 
-                <div class="modal-info">
+                    <div class="modal-info">
 
 
 
+                    </div>
                 </div>
+
+
             </div>
 
 
         </div>
 
 
-    </div>
 
 
+    </body>
 
-
-</body>
+</div>

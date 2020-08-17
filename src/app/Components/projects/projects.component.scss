@@ -1,0 +1,607 @@
+$main-color: #9f29ff;
+$main-font: 'Raleway';
+
+*
+{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body
+{
+    // this is the color on all the projects
+    height: 100vh;
+    width: 100vw;
+    background-color: #222;
+    position: fixed;
+    top: 0%;
+    left: 0%;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    color: white;
+}
+
+#svg
+{
+    max-width: 350px;
+    height: auto;
+    transition: all 0.5s ease-in-out;
+    margin-top: -0.5em;
+}
+
+.head-line
+{
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    padding: 2em;
+    text-align: center;
+    grid-template-columns: repeat(2, 1fr);
+    box-shadow: 2px 2px 20px 5px $main-color;
+    border-bottom: 2px solid $main-color;
+    background-color: rgba(0, 0, 0, 0.9);
+}
+
+.head-line
+{
+    .left
+    {
+        margin-top: 0.5em;
+    }
+
+    @media(max-width: 868px)
+    {
+        display: block;
+    }
+
+
+    p
+    {
+        color: lightgray;
+        width: 50%;
+        margin: 0 auto;
+        font-family: $main-font;
+        font-size: 1em;
+        font-variant: small-caps;
+    }
+}
+
+h1
+{
+    font-family: $main-font;
+    font-size: 4em;
+    color: $main-color;
+    font-variant: small-caps;
+    font-weight: 10;
+}
+
+
+.line
+{
+    position: relative;
+    height: 2px;
+    width: 50px;
+    background-color: white;
+    margin: 1em auto 1em auto;
+}
+
+.line-2
+{
+    position: relative;
+    height: 1px;
+    width: 300px;
+    background-color: white;
+    margin: 0.5em auto 0em auto;
+}
+
+img
+{
+    max-width: 300px;
+    height: auto;
+    transition: all 0.5s ease-in-out;
+    z-index: 1000;
+}
+
+#net, #milli, #msft, #bnb
+{
+    width: 100%;
+    // margin-right: 5em;
+    height: auto;
+    transition: all 0.5s ease-in-out;
+}
+
+img:hover
+{
+    //box-shadow: -6px 6px white;
+    transition: all 0.5s ease-in-out;
+    cursor: pointer;
+}
+
+
+// Design
+.article
+{ 
+    border-bottom: 2px solid $main-color;
+    background-color: rgba(0, 0, 0, 0.9);
+    box-shadow: 0px 8px 20px -5px $main-color;
+    padding: 2em;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    grid-template-columns: repeat(2, 1fr);
+    margin-top: -7em;
+    
+    
+    @media(max-width: 868px)
+    {
+        display: block;
+
+        img
+        {
+            display: block;
+            margin: 0 auto;
+        }
+    }
+
+
+.designz
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+
+    h2
+    {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-variant: small-caps;
+        font-weight: 100;
+        font-size: 2.5em;
+        color: $main-color;
+    }
+    
+    p
+    {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-variant: small-caps;
+        font-weight: 100;
+        width: 70%;
+        text-align: center;
+        margin: 0em auto 1em auto;
+    }
+}
+}
+
+
+.example
+{
+    // position: relative;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    // padding: 5em;
+    margin: 5em auto 0em auto;
+    // margin: 0 auto;
+    
+    @media(max-width: 1268px)
+    {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+     @media(max-width: 668px)
+    {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    &:hover
+    {
+        .article
+        {
+            animation-play-state: running; 
+        }
+    }
+
+
+
+    // Netflix
+    .example-1
+    {
+        max-width: 300px;
+        margin: 0em auto 0em auto;
+        animation-name: marginDown;
+        animation-duration: 1s;
+        animation-fill-mode: forwards;
+        animation-play-state: paused; 
+
+
+    .desc h2
+    {
+        //font-weight: 900;
+        font-family: $main-font;
+        color: red;
+        font-size: 1.5em;
+    }
+
+
+    .desc p
+    {
+        font-size: 0.9em;
+        color: white;
+        font-variant: small-caps;
+        line-height: 1.5em;
+        font-family: $main-font;
+    }
+
+    
+    
+    .desc button
+    {
+        position: relative;
+        padding: 0.6em 2em 0.6em 2em;
+        margin: 0.7em 0em 0.5em 0em;
+        max-width: 100%;
+        display: inline;
+        border: 2px solid red;
+        border-radius: 5px;
+        color: white;
+        background-color: transparent;
+        font-family: $main-font;
+        
+        &::after
+        {
+                content: '';
+                position: absolute;
+                background-color: red;
+                top: -1%;
+                left: 0%;
+                height: 100%;
+                width: 0%;
+                transition: all 0.4s ease-in-out;
+                z-index: -5;
+                border-radius: 5px;
+            }
+            
+            &:hover
+            {
+                // background-color: red;
+                cursor: pointer;
+                transition: all 0.5s ease-in-out;
+                color: black;
+                font-weight: 900;
+                box-shadow: 2px 5px 10px red;
+                
+                &::after
+                {
+                    left: -0.5%;
+                    width: 100%;
+                    border-radius: 5px;
+                    padding: 1px;
+                }
+                
+            }
+        }
+        
+        &:hover
+        {
+            .desc
+            {
+                animation-play-state: running; 
+            }
+
+            animation-play-state: running; 
+        }
+    }
+
+
+    // Millionare
+    .example-2
+    {
+        max-width: 300px;
+        margin: 0em auto 1em auto;
+        animation-name: marginDown;
+        animation-duration: 1s;
+        animation-fill-mode: forwards;
+        animation-play-state: paused; 
+
+        &:hover
+        {
+            .milli-desc
+            {
+                animation-play-state: running; 
+            }
+
+            animation-play-state: running; 
+        }
+
+        .milli-desc h2
+        {
+            //font-weight: 900;
+            font-family: $main-font;
+            color: #0954ab;
+            font-size: 1.5em;
+        }
+
+
+        .milli-desc p
+        {
+            font-size: 0.9em;
+            color: white;
+            font-variant: small-caps;
+            line-height: 1.5em;
+            font-family: $main-font;
+        }
+        
+        .milli-desc button
+        {
+            position: relative;
+            padding: 0.6em 2em 0.6em 2em;
+            margin: 0.7em 0em 0.5em 0em;
+            max-width: 100%;
+            background-color: transparent;
+            border: 2px solid #0954ab;
+            color: white;
+            border-radius: 5px;
+            display: inline;
+            font-family: $main-font;
+            
+            &:after
+            {
+                content: '';
+                position: absolute;
+                top: 0%;
+                left: 0%;
+                height: 100%;
+                width: 0%;
+                background-color: #0954ab;
+                transition: all 0.4s ease-in-out;
+                z-index: -5;
+                border-radius: 5px;
+            }
+            
+            &:hover
+            {
+                cursor: pointer;
+                color: black;
+                transition: all 0.4s ease-in-out;
+                font-weight: 900;
+                box-shadow: 2px 5px 10px #0954ab;
+                
+                &:after
+                {
+                    width: 101%;
+                    height: 101%;
+                }
+            }
+        }
+        
+        
+    }
+    
+    
+    .example-3
+    {
+        max-width: 300px;
+        margin: 0 auto;
+        animation-name: marginDown;
+        animation-duration: 1s;
+        animation-fill-mode: forwards;
+        animation-play-state: paused; 
+        
+        &:hover
+        {
+            .msft-desc
+            {
+                animation-play-state: running; 
+            }
+            
+            animation-play-state: running; 
+        }
+        
+        // edit h2
+        h2
+        {
+            color:  lightgreen;
+            font-family: $main-font;
+            font-size: 1.5em;
+        }
+        
+        // edit p
+        p
+        {
+            font-size: 0.9em;
+            color: white;
+            font-variant: small-caps;
+            line-height: 1.5em;
+            font-family: $main-font;
+        }
+        
+
+        // edit button
+         .msft-desc button
+        {
+            position: relative;
+            padding: 0.6em 2em 0.6em 2em;
+            margin: 0.7em 0em 0.5em 0em;
+            max-width: 100%;
+            background-color: transparent;
+            border: 2px solid lightgreen;
+            color: white;
+            border-radius: 5px;
+            display: inline;
+            font-family: $main-font;
+
+            &:after
+            {
+                content: '';
+                position: absolute;
+                top: -0.5%;
+                left: -1%;
+                height: 100%;
+                width: 0%;
+                background-color: lightgreen;
+                transition: all 0.4s ease-in-out;
+                z-index: -5;
+                border-radius: 5px;
+            }
+            
+            &:hover
+            {
+                cursor: pointer;
+                color: black;
+                transition: all 0.4s ease-in-out;
+                font-weight: 900;
+                box-shadow: 2px 5px 10px lightgreen;
+                border-radius: 5px;
+                
+                &:after
+                {
+                    width: 102%;
+                    height: 101%;
+                }
+            }
+        }
+
+
+    }
+
+
+    .example-4
+    {
+        max-width: 300px; 
+        margin: 0 auto;    
+        animation-name: marginDown;
+        animation-duration: 1s;
+        animation-fill-mode: forwards;
+        animation-play-state: paused;   
+
+        &:hover
+        {
+            .airbnb-desc
+            {
+                animation-play-state: running; 
+            }
+
+            animation-play-state: running;    
+        }
+
+        
+        // edit h2
+        h2
+        {
+            color: #FF5A5F;
+            font-family: $main-font;
+            font-size: 1.5em;
+        }
+
+        // edit p
+        p
+        {
+            font-size: 0.9em;
+            font-family: $main-font;
+            font-variant: small-caps;
+            line-height: 1.5em;
+        }
+
+
+        // edit button
+        .airbnb-desc button
+        {
+            position: relative;
+            padding: 0.6em 2em 0.6em 2em;
+            margin: 0.7em 0em 0.5em 0em;
+            max-width: 100%;
+            background-color: transparent;
+            border: 2px solid #FF5A5F;
+            color: white;
+            border-radius: 5px;
+            display: inline;
+            font-family: $main-font;
+
+             &:after
+            {
+                content: '';
+                position: absolute;
+                top: -1%;
+                left: 0%;
+                height: 100%;
+                width: 0%;
+                background-color: #FF5A5F;
+                transition: all 0.4s ease-in-out;
+                z-index: -5;
+                border-radius: 5px;
+            }
+            
+            &:hover
+            {
+                cursor: pointer;
+                color: black;
+                transition: all 0.4s ease-in-out;
+                font-weight: 900;
+                box-shadow: 2px 5px 10px #FF5A5F;
+                border-radius: 5px;
+                
+                &:after
+                {
+                    width: 101%;
+                    height: 102%;
+                }
+            }
+        }
+    }
+        
+.desc, .milli-desc, .msft-desc, .airbnb-desc
+{
+    position: relative;
+    font-family: 'Roboto';
+    padding: 0.5em;
+    background-color: #121212;
+    animation-name: ringDown;
+    animation-duration: 0.75s;
+    animation-fill-mode: forwards;
+    animation-play-state: paused; 
+}       
+        
+.desc > *, .milli-desc > *, .msft-desc > *, .airbnb-desc > *
+{
+    padding: 0.3em 0em;
+}
+
+}
+
+
+@keyframes ringDown
+{
+    0%
+    {
+        // display: none;
+        opacity: 0;
+        transform: translateY(-105%);
+        z-index: -100;
+        // margin-bottom: -5em;
+    }
+
+    100%
+    {
+        // display: blo;
+        opacity: 1;
+        transform: translateY(0%);
+        z-index: 0;
+        // margin-bottom: 0em;
+    }
+}
+
+@keyframes marginDown
+{
+    0%
+    {
+        margin-bottom: 0em;
+    }
+
+    100%
+    {
+        margin-bottom: 10em;
+    }
+}

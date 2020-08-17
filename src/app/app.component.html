@@ -1,33 +1,36 @@
 <!-- Stuff below is fixed -->
 
-<div class="container">
+<!-- <div class="container"> -->
 
-  <div class="main-info">
+<div class="main-info">
 
-    <div *ngIf="showMenu" class="backz" (click)="removeOverlay()">
-      <img src="assets/imgs/back-arrow-white.png" alt="" class="back">
-    </div>
-
-    <div class="menu-pic">
-      <img alt="" id="img">
-    </div>
-
-    <div class="menu-link">
-      <div class="all-items">
-        <li>
-          <a href="https://mayub24.github.io/myapp/" class="item">Home</a>
-        </li>
-        <li>
-          <a href="experience/" class="item">Experience</a>
-        </li>
-        <li>
-          <a href="skills" class="item">Skills</a>
-        </li>
-      </div>
-    </div>
-
+  <div *ngIf="showMenu" class="backz" (click)="removeOverlay()">
+    <img src="assets/imgs/back-arrow-white.png" alt="" class="back">
   </div>
 
-  <router-outlet></router-outlet>
+  <div class="menu-pic">
+    <img alt="" id="img">
+  </div>
+
+  <div class="menu-link">
+    <div class="all-items">
+      <li>
+        <a href="https://mayub24.github.io/myapp/" class="item">Home</a>
+      </li>
+      <li>
+        <a href="experience/" class="item">Experience</a>
+      </li>
+      <li>
+        <a href="skills" class="item">Skills</a>
+      </li>
+      <li>
+        <a href="Projects" class="item">Projects</a>
+      </li>
+    </div>
+  </div>
 
 </div>
+
+<router-outlet></router-outlet>
+
+<!-- </div> -->

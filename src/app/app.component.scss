@@ -16,6 +16,7 @@
     right: 0%;
     // Initially the screen is hidden
     visibility: hidden;
+    overflow: visible;
 
     // When show is added, screen becomes visible
     &.show
@@ -162,6 +163,7 @@
 // Link Styling
 a
 {
+    position: relative;
     display: inline-block;
     list-style: none;
     text-decoration: none;
@@ -171,12 +173,29 @@ a
     font-weight: 900;
     letter-spacing: 0.1em;
     color:  black;
+    
+    &::after
+    {
+        content: '';
+        position: absolute;
+        top: 100%;
+        left: 0%;
+        height: 2px;
+        width: 0%;
+        background-color: black;
+        transition: all 0.4s ease-in-out;
+    }
 
     &:hover
     {
-        color: #9f29ff;
-        transition: 0.5s all ease-in-out;
-        transform: scale(1.5);
+        // color: #9f29ff;
+        // transition: 0.5s all ease-in-out;
+        // transform: scale(1.5);
+        &::after
+        {
+            width: 100%;
+            transition: all 0.4s ease-in-out;
+        }
     }
 }
 

@@ -8,12 +8,14 @@ import { RouterModule, Routes } from '@angular/router';
 import { ExperienceComponent } from './Components/experience/experience.component';
 import { HomePageComponent } from './Components/home-page/home-page.component';
 import { SkillsComponent } from './Components/skills/skills.component';
+import { ProjectsComponent } from './Components/projects/projects.component';
 
 // Creating routes array of objects that define the path and component
 const routes: Routes = [
   { path: '', component: HomePageComponent },
   { path: 'skills', component: SkillsComponent },
-  { path: 'experience', component: ExperienceComponent }
+  { path: 'experience', component: ExperienceComponent },
+  { path: 'Projects', component: ProjectsComponent }
 ]
 
 @NgModule({

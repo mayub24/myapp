@@ -1,6 +1,7 @@
 /* You can add global styles to this file, and also import other style files */
 // @import '../src/app/Components/hamburger/hamburger.component.scss';
 
+
 body
 {
             // background-image: url('../src/assets/imgs/back.jpg');
@@ -15,7 +16,7 @@ body
     z-index: 900;
     position: fixed;
     top: 3%;
-    right: 2%;
+    right: 5%;
     
     &:hover
     {

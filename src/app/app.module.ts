@@ -9,6 +9,7 @@ import { HamburgerComponent } from './Components/hamburger/hamburger.component';
 import { RoutingModule } from './routing.module';
 import { MainPicComponent } from './Components/main-pic/main-pic.component';
 import { BackComponent } from './Components/back/back.component';
+import { ProjectsComponent } from './Components/projects/projects.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { BackComponent } from './Components/back/back.component';
     ExperienceComponent,
     HamburgerComponent,
     MainPicComponent,
-    BackComponent
+    BackComponent,
+    ProjectsComponent
   ],
   imports: [
     BrowserModule,
