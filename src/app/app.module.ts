@@ -11,6 +11,8 @@ import { MainPicComponent } from './Components/main-pic/main-pic.component';
 import { BackComponent } from './Components/back/back.component';
 import { ProjectsComponent } from './Components/projects/projects.component';
 
+import { NgxUsefulSwiperModule } from 'ngx-useful-swiper';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -24,7 +26,8 @@ import { ProjectsComponent } from './Components/projects/projects.component';
   ],
   imports: [
     BrowserModule,
-    RoutingModule
+    RoutingModule,
+    NgxUsefulSwiperModule
   ],
   providers: [],
   bootstrap: [AppComponent]
