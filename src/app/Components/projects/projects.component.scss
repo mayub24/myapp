@@ -111,6 +111,45 @@ img
     transition: all 0.5s ease-in-out;
 }
 
+#net
+{
+    opacity: 0;
+    animation-name: scaleUp;
+    animation-duration: 1s;
+    animation-delay: 0.25s;
+    animation-fill-mode: forwards;
+}
+
+#milli
+{
+    opacity: 0;
+    animation-name: scaleUp;
+    animation-duration: 1s;
+    animation-delay: 0.50s;
+    animation-fill-mode: forwards;
+}
+
+#msft
+{
+    opacity: 0;
+    animation-name: scaleUp;
+    animation-duration: 1s;
+    animation-delay: 0.75s;
+    animation-fill-mode: forwards;
+}
+
+#bnb
+{
+    opacity: 0;
+    animation-name: scaleUp;
+    animation-duration: 1s;
+    animation-delay: 1s;
+    animation-fill-mode: forwards;
+}
+
+// Adding transition/keyframes to imgs
+
+
 img:hover
 {
     //box-shadow: -6px 6px white;
@@ -179,12 +218,9 @@ img:hover
 
 .example
 {
-    // position: relative;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    // padding: 5em;
-    margin: 5em auto 0em auto;
-    // margin: 0 auto;
+    margin: 3em auto 2em auto;
     
     @media(max-width: 1268px)
     {
@@ -196,13 +232,13 @@ img:hover
         grid-template-columns: repeat(1, 1fr);
     }
 
-    &:hover
-    {
-        .article
-        {
-            animation-play-state: running; 
-        }
-    }
+    // &:hover
+    // {
+    //     .article
+    //     {
+    //         animation-play-state: running; 
+    //     }
+    // }
 
 
 
@@ -211,10 +247,10 @@ img:hover
     {
         max-width: 300px;
         margin: 0em auto 0em auto;
-        animation-name: marginDown;
-        animation-duration: 1s;
-        animation-fill-mode: forwards;
-        animation-play-state: paused; 
+        // animation-name: marginDown;
+        // animation-duration: 1s;
+        // animation-fill-mode: forwards;
+        // animation-play-state: paused; 
 
 
     .desc h2
@@ -237,19 +273,14 @@ img:hover
 
     
     
-    .desc button
+    .desc .visitz
     {
         position: relative;
-        padding: 0.6em 2em 0.6em 2em;
-        margin: 0.7em 0em 0.5em 0em;
-        max-width: 100%;
-        display: inline;
         border: 2px solid red;
         border-radius: 5px;
         color: white;
         background-color: transparent;
         font-family: $main-font;
-        margin: 0.3em;
         
         &::after
         {
@@ -285,15 +316,15 @@ img:hover
             }
         }
         
-        &:hover
-        {
-            .desc
-            {
-                animation-play-state: running; 
-            }
+        // &:hover
+        // {
+        //     .desc
+        //     {
+        //         animation-play-state: running; 
+        //     }
 
-            animation-play-state: running; 
-        }
+        //     animation-play-state: running; 
+        // }
     }
 
 
@@ -302,20 +333,20 @@ img:hover
     {
         max-width: 300px;
         margin: 0em auto 1em auto;
-        animation-name: marginDown;
-        animation-duration: 1s;
-        animation-fill-mode: forwards;
-        animation-play-state: paused; 
+        // animation-name: marginDown;
+        // animation-duration: 1s;
+        // animation-fill-mode: forwards;
+        // animation-play-state: paused; 
 
-        &:hover
-        {
-            .milli-desc
-            {
-                animation-play-state: running; 
-            }
+        // &:hover
+        // {
+        //     .milli-desc
+        //     {
+        //         animation-play-state: running; 
+        //     }
 
-            animation-play-state: running; 
-        }
+        //     animation-play-state: running; 
+        // }
 
         .milli-desc h2
         {
@@ -335,19 +366,14 @@ img:hover
             font-family: $main-font;
         }
         
-        .milli-desc button
+        .milli-desc .visitz
         {
             position: relative;
-            padding: 0.6em 2em 0.6em 2em;
-            margin: 0.7em 0em 0.5em 0em;
-            max-width: 100%;
             background-color: transparent;
             border: 2px solid #0954ab;
             color: white;
             border-radius: 5px;
-            display: inline;
             font-family: $main-font;
-            margin: 0.3em;
             
             &:after
             {
@@ -387,20 +413,20 @@ img:hover
     {
         max-width: 300px;
         margin: 0 auto;
-        animation-name: marginDown;
-        animation-duration: 1s;
-        animation-fill-mode: forwards;
-        animation-play-state: paused; 
+        // animation-name: marginDown;
+        // animation-duration: 1s;
+        // animation-fill-mode: forwards;
+        // animation-play-state: paused; 
         
-        &:hover
-        {
-            .msft-desc
-            {
-                animation-play-state: running; 
-            }
+        // &:hover
+        // {
+        //     .msft-desc
+        //     {
+        //         animation-play-state: running; 
+        //     }
             
-            animation-play-state: running; 
-        }
+        //     animation-play-state: running; 
+        // }
         
         // edit h2
         h2
@@ -422,19 +448,14 @@ img:hover
         
 
         // edit button
-         .msft-desc button
+         .msft-desc .visitz
         {
             position: relative;
-            padding: 0.6em 2em 0.6em 2em;
-            margin: 0.7em 0em 0.5em 0em;
-            max-width: 100%;
             background-color: transparent;
             border: 2px solid lightgreen;
             color: white;
             border-radius: 5px;
-            display: inline;
             font-family: $main-font;
-            margin: 0.3em;
 
             &:after
             {
@@ -475,20 +496,20 @@ img:hover
     {
         max-width: 300px; 
         margin: 0 auto;    
-        animation-name: marginDown;
-        animation-duration: 1s;
-        animation-fill-mode: forwards;
-        animation-play-state: paused;   
+        // animation-name: marginDown;
+        // animation-duration: 1s;
+        // animation-fill-mode: forwards;
+        // animation-play-state: paused;   
 
-        &:hover
-        {
-            .airbnb-desc
-            {
-                animation-play-state: running; 
-            }
+        // &:hover
+        // {
+        //     .airbnb-desc
+        //     {
+        //         animation-play-state: running; 
+        //     }
 
-            animation-play-state: running;    
-        }
+        //     animation-play-state: running;    
+        // }
 
         
         // edit h2
@@ -510,19 +531,14 @@ img:hover
 
 
         // edit button
-        .airbnb-desc button
+        .airbnb-desc .visitz
         {
             position: relative;
-            padding: 0.6em 2em 0.6em 2em;
-            margin: 0.7em 0em 0.5em 0em;
-            // width: 30%;
             background-color: transparent;
             border: 2px solid #FF5A5F;
             color: white;
             border-radius: 5px;
-            display: inline;
             font-family: $main-font;
-            margin: 0.3em;
 
              &:after
             {
@@ -562,47 +578,134 @@ img:hover
     font-family: 'Roboto';
     padding: 0.5em;
     background-color: #121212;
-    animation-name: ringDown;
-    animation-duration: 0.75s;
-    animation-fill-mode: forwards;
-    animation-play-state: paused; 
 }       
+
+.desc
+{
+    opacity: 0;
+    animation-name: ringDown;
+    animation-duration: 2s;
+    animation-delay: 1s;
+    animation-fill-mode: forwards;
+}
+
+.milli-desc
+{
+    opacity: 0;
+    animation-name: ringDown;
+    animation-duration: 2s;
+    animation-delay: 1.5s;
+    animation-fill-mode: forwards;
+}
+
+.msft-desc
+{
+    opacity: 0;
+    animation-name: ringDown;
+    animation-duration: 2s;
+    animation-delay: 2s;
+    animation-fill-mode: forwards;
+}
+
+.airbnb-desc
+{
+    opacity: 0;
+    animation-name: ringDown;
+    animation-duration: 2s;
+    animation-delay: 2.5s;
+    animation-fill-mode: forwards;
+}
+
         
 .desc > *, .milli-desc > *, .msft-desc > *, .airbnb-desc > *
 {
     padding: 0.3em 0em;
 }
 
-
+// Git buttons and Link Button
 .git-button
 {
+    position: relative;
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
-    text-align: center;
+    text-align: left;
     border: 2px solid rgb(200, 0, 200);
     border-radius: 5px;
     text-decoration: none;
-
+    padding: 1em;
+    width: 57%;
+    
     .git-icon
     {
         color: white;
         font-size: 0.7em;
+        margin: 0em 0.5em;
     }
-
+    
     .git > p
     {
         color: white;
         font-size: 1em;
         text-decoration: none;
+        margin-left: 0.75em;
+    }
+
+    &::after
+    {
+        content: '';
+        position: absolute;
+        background-color: rgb(200, 0, 200);
+        top: -0.5%;
+        left: -0.5%;
+        height: 100%;
+        width: 0%;
+        transition: all 0.4s ease-in-out;
+        z-index: -5;
+        border-radius: 5px;
+    }
+
+    &:hover::after
+    {
+        width: 100%;
+        padding: 1px;
     }
 }
 
+// Visit me button
+.visitz
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: left;
+    border: 2px solid #FF585D;
+    border-radius: 5px;
+    text-decoration: none;
+    margin-bottom: 0.5em;
+    width: 40%;
+
+    .visit > p
+    {
+        color: white;
+        font-size: 1em;
+        margin-left: 0.75em;
+    }
+
+    .arrow-icon > i
+    {
+        color: white;
+        margin: 0em 0.5em;
+    }
 
 }
-// Swiper editing
 
+
+}
+
+// Swiper editing
 .swiperz
 {
     width: 80%;
@@ -729,20 +832,16 @@ img:hover
 {
     0%
     {
-        // display: none;
         opacity: 0;
         transform: translateY(-105%);
         z-index: -100;
-        // margin-bottom: -5em;
     }
 
     100%
     {
-        // display: blo;
         opacity: 1;
         transform: translateY(0%);
         z-index: 0;
-        // margin-bottom: 0em;
     }
 }
 
@@ -756,5 +855,20 @@ img:hover
     100%
     {
         margin-bottom: 10em;
+    }
+}
+
+@keyframes scaleUp
+{
+    0%
+    {
+        transform: scale(0);
+        opacity: 0;
+    }
+
+    100%
+    {
+        transform: scale(1);
+        opacity: 1;
     }
 }
