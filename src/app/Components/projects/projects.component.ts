@@ -11,14 +11,14 @@ export class ProjectsComponent implements OnInit {
 
   config: SwiperOptions = {
     effect: 'coverflow',
-    initialSlide: 2,
+    initialSlide: 1,
     grabCursor: true,
     centeredSlides: true,
     slidesPerView: 'auto',
     coverflowEffect: {
-      rotate: 50,
+      rotate: 100,
       stretch: 0,
-      depth: 100,
+      depth: 300,
       modifier: 1,
       slideShadows: true,
     },
