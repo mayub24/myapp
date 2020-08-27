@@ -22,13 +22,19 @@ body
     color: white;
 }
 
-// #svg
-// {
-//     max-width: 350px;
-//     height: auto;
-//     transition: all 0.5s ease-in-out;
-//     margin-top: -0.5em;
-// }
+#svg
+{
+    max-width: 350px;
+    height: auto;
+    transition: all 0.5s ease-in-out;
+
+    @media(max-width: 868px)
+    {
+        max-width: 250px;
+        margin: 0.5em;
+    }
+}
+
 
 .head-line
 {
@@ -41,6 +47,11 @@ body
     box-shadow: 2px 2px 20px 5px $main-color;
     border-bottom: 2px solid $main-color;
     background-color: rgba(0, 0, 0, 0.9);
+    
+        @media(max-width: 868px)
+        {
+            padding: 1em;
+        } 
 }
 
 .head-line
@@ -64,6 +75,11 @@ body
         font-family: $main-font;
         font-size: 1em;
         font-variant: small-caps;
+
+        @media(max-width: 868px)
+        {
+            width: 80%;
+        }
     }
 }
 
@@ -74,6 +90,11 @@ h1
     color: $main-color;
     font-variant: small-caps;
     font-weight: 10;
+
+    @media(max-width: 868px)
+        {
+            font-size: 3em;
+        }
 }
 
 
@@ -702,9 +723,15 @@ img:hover
 
 }
 
-
 }
 
+@media(max-width: 668px)
+{
+    .example .example-1, .example .example-2, .example .example-3, .example .example-4
+    {
+        margin-bottom: 3em;
+    }
+}
 // Swiper editing
 .swiperz
 {
