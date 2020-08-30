@@ -58,6 +58,21 @@ body
 {
     .left
     {
+        opacity: 0;
+        animation-name: scaleUp;
+        animation-duration: 0.5s;
+        animation-delay: 0.1s;
+        animation-fill-mode: forwards;
+        margin-top: 0.5em;
+    }
+
+    .right
+    {
+        opacity: 0;
+        animation-name: scaleUp;
+        animation-duration: 0.5s;
+        animation-delay: 0.2s;
+        animation-fill-mode: forwards;
         margin-top: 0.5em;
     }
 
@@ -302,6 +317,11 @@ img:hover
         color: white;
         background-color: transparent;
         font-family: $main-font;
+
+        .visit + *
+        {
+            transition: all 0.5s ease-in-out;
+        }
         
         &::after
         {
@@ -325,6 +345,12 @@ img:hover
                 color: black;
                 font-weight: 900;
                 box-shadow: 2px 5px 10px red;
+
+                .visit + *
+                {
+                    margin-left: 0.4em;
+                    transition: all 0.5s ease-in-out;
+                }
                 
                 &::after
                 {
@@ -395,6 +421,11 @@ img:hover
             color: white;
             border-radius: 5px;
             font-family: $main-font;
+
+             .visit + *
+                {
+                    transition: all 0.5s ease-in-out;
+                }
             
             &:after
             {
@@ -417,6 +448,12 @@ img:hover
                 transition: all 0.4s ease-in-out;
                 font-weight: 900;
                 box-shadow: 2px 5px 10px #0954ab;
+
+                 .visit + *
+                {
+                    margin-left: 0.4em;
+                    transition: all 0.5s ease-in-out;
+                }
                 
                 &:after
                 {
@@ -478,6 +515,11 @@ img:hover
             border-radius: 5px;
             font-family: $main-font;
 
+             .visit + *
+                {
+                    transition: all 0.5s ease-in-out;
+                }
+
             &:after
             {
                 content: '';
@@ -500,6 +542,12 @@ img:hover
                 font-weight: 900;
                 box-shadow: 2px 5px 10px lightgreen;
                 border-radius: 5px;
+
+                 .visit + *
+                {
+                    margin-left: 0.4em;
+                    transition: all 0.5s ease-in-out;
+                }
                 
                 &:after
                 {
@@ -561,6 +609,11 @@ img:hover
             border-radius: 5px;
             font-family: $main-font;
 
+             .visit + *
+                {
+                    transition: all 0.5s ease-in-out;
+                }
+
              &:after
             {
                 content: '';
@@ -583,6 +636,12 @@ img:hover
                 font-weight: 900;
                 box-shadow: 2px 5px 10px #FF5A5F;
                 border-radius: 5px;
+
+                 .visit + *
+                {
+                    margin-left: 0.4em;
+                    transition: all 0.5s ease-in-out;
+                }
                 
                 &:after
                 {
@@ -706,6 +765,7 @@ img:hover
     border-radius: 5px;
     text-decoration: none;
     margin-bottom: 0.5em;
+    margin-top: 0.8em;
     width: 40%;
 
     .visit > p

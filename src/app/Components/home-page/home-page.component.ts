@@ -12,7 +12,7 @@ export class HomePageComponent implements OnInit {
 
   shakeAnimation: boolean = false;
   // checkAnimation: boolean = false;
-  quoteArr: any = [' \"Black Lives Matter\"  ', ' \"Destined For Greatness\"  ', '  \"Hard Work Pays Off\" ', ' "Always Positive" '];
+  quoteArr: any = ['\"Destined For Greatness\"  ', '  \"Hard Work Pays Off\" ', ' "Always Positive" '];
   quotez: any = ['yo', 'bro', 'so']
   valz: any = "\"Always Positive\"";
   i: any = 0;
