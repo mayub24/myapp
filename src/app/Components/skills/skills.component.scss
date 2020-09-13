@@ -96,12 +96,12 @@
             padding: 1em;
             border-radius: 1em;
             color: white;
+            font-size: 0.90em;
         
             
             @media(max-width: 566px)
             {
                 width: 18em;
-                border-radius: 30%;
             }
 
 
@@ -162,6 +162,7 @@
         .each-skill
         {
             padding: 0em 1em;
+            font-size: 0.95em;
         }
 
         h1

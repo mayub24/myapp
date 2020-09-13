@@ -21,11 +21,11 @@ export class SkillsComponent implements OnInit {
       [
         {
           type: 'Programming Languages',
-          languages: 'JavaScript,TypeScript, C, C++, Shell Scripting (Linux/Unix/BASH), MySQL'
+          languages: 'JavaScript,TypeScript, C, C++, Java, Shell Scripting (Linux/Unix/BASH), MySQL'
         },
         {
           type: 'Front-end Development',
-          languages: 'Angular, React, jQuery, HTML5, CSS3, Sass, Bootstrap 4, Bulma'
+          languages: 'Angular, React, jQuery, HTML5, CSS3, Sass, Bootstrap 4, Bulma, Materialize CSS'
         },
         {
           type: 'Backend Development',
