@@ -11,7 +11,21 @@ html, .container
  {
      background-image: none; 
      background-color: transparent;
-     line-height: 1.5;   
+     line-height: 1.5;
+     height: 93vh;   
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+
+    
+@media(min-width: 1498px)
+{
+    
+ overflow: hidden;
+    
+}
+
 }
     
     .overlayz
