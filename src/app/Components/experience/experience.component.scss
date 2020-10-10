@@ -285,6 +285,7 @@ h1.exp
             backface-visibility: hidden;
             transition: $trans;
             display: table;
+            border-radius: 8px;
 
             @media(max-width: 556px)
             {
@@ -310,6 +311,7 @@ h1.exp
                 {
                     padding-right: 0.5em;
                     text-align: left;
+                    font-size: 0.9em;
                 }
             }
         }
@@ -331,14 +333,14 @@ h1.exp
                 height: 100%;
             }
 
-            margin-bottom: 8em;
+            margin-bottom: 7em;
             transition: $trans;
             cursor: pointer;
             
-            @media(max-width: 996px)
-            {
-               padding-bottom: 6em;        
-            }
+            // @media(max-width: 996px)
+            // {
+            //    padding-bottom: 6em;        
+            // }
         }
 
 
