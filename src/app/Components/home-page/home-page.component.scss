@@ -15,74 +15,19 @@ $dark: 'black';
 
 $nav-font: 'Raleway';
 
-.bruh
+.main
 {
+    width: 100vw;
+    height: 95vh;
+    position: fixed;
+    top: 0;
+    right: 0;
+    // height: 95vh;   
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    text-align: center;
 }
-
-// .all
-// {
-//     position: fixed;
-//     right: 0%;
-//     top: -5%;
-//     transform: rotate(-10deg);
-
-
-
-//     .check
-//     {
-//         position: absolute;
-//         top: 60%;
-//         left: 31%;
-//         color: white;
-//         font-size: 1.2em;
-//         font-family: cursive;
-//         font-weight: 100;
-
-//         @media(max-width: 566px)
-//         {
-//             font-size: 0.8em;
-//             top: 40%;
-//             right: 30%;
-//             padding: 0.5em;
-//         }
-//     }
-
-
-//     @media(max-width: 700px)
-//     {
-//         top: 0%;
-//         right: 5%;
-
-//         img
-//         {
-//             width: 150px;
-//             @media(max-width: 566px)
-//             {
-//                 width: 90px;
-//             }
-//         }
-        
-        
-//         .check
-//         {
-//             left: 23%;
-//             font-size: 0.8em;
-//         }
-
-//         @media(max-width: 566px)
-//         {
-//             top: 5%;
-//             right: 7%;
-//         }
-
-//     }
-
-// }
 
 
 .overlay
@@ -105,21 +50,6 @@ h3, h2
     font-weight: 500;
 }
 
-.main
-{
-    width: 100vw;
-    height: 100vh;
-    position: fixed;
-    top: 0;
-    right: 0;
-    margin-top: 2em;
-    // overflow: hidden;
-    //   display: flex;
-    // flex-direction: column;
-    // justify-content: center;
-    // align-items: center;
-    // text-align: center;
-}
 
 
 
@@ -441,7 +371,7 @@ span.blue
 {
     animation-name: pop;
     animation-duration: 1.5s;
-    animation-delay: 3.5s;
+    animation-delay: 3s;
     animation-fill-mode: forwards;
     opacity: 0;
 }
