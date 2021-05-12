@@ -23,7 +23,7 @@
     "express-handlebars": "^4.0.3",
     "ngx-useful-swiper": "^9.0.3",
     "rxjs": "~6.6.2",
-    "swiper": "^5.4.5",
+    "swiper": "^6.5.1",
     "tslib": "^2.0.0",
     "zone.js": "~0.10.3"
   },
