@@ -15,7 +15,7 @@ export class ExperienceComponent implements OnInit {
   allJobs: jobs[];
   shakeIt: boolean = true;
   i: number = 0;
-  txt: string = "Over the past couple of years, I have had the opportunity of working as an I.T Assistant and as a Web Developer. Both workplaces have taught me various technical skills that relate to my field of study, along with many communication and soft skills. I am currently looking for a Co op position for Winter 2021, preferably as a Full Stack Web Developer."
+  txt: string = "Over the past couple of years, I have had the opportunity of working as a QA Analyst and as a Web Developer. Both workplaces have taught me various technical skills that relate to my field of study, along with many communication and soft skills. I am currently looking for a Co op position for Winter 2022, preferably as a Full Stack Web Developer."
   allText: string = '';
 
 
@@ -119,6 +119,36 @@ export class ExperienceComponent implements OnInit {
 
      <li style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">
       Operated scanners, photocopiers and fax machines
+     </li>
+
+     <br>
+     </div>
+
+      `
+    }
+    else {
+      inner.style.backgroundColor = '#272727';
+
+      main.innerHTML =
+        `
+      <h2 style="color: #9744be; font-family: 'Raleway';margin-top: 1em; padding: 0.5em; margin-left: 1em;">More about TDSB</h2>
+      
+
+      <div style="width: 85%; margin: 0 auto">
+     <li style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">
+        Performed accessibility testing following the WCAG 2.1 standards using tools such as WAVE, SAC and NVDA
+     </li>
+
+      <br>
+
+     <li style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">
+        Used Angular directives, Controllers, Filters, Services, Templates, Events, Injectors and the Angular CLI
+     </li>
+
+     <br>
+
+     <li style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">
+        Assisted the development team in fixing accessibility bugs
      </li>
 
      <br>
